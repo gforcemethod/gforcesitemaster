@@ -33,6 +33,7 @@ import studioTeam from "@/assets/studio-team.jpg";
 import method1 from "@/assets/method-1.jpg";
 import mentorImg from "@/assets/mentor-new.jpg";
 import igFeed from "@/assets/ig-feed.jpg";
+import programmingImg from "@/assets/programming.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,7 +72,7 @@ export const Route = createFileRoute("/")({
           "@type": "Organization",
           name: "G-Force Hybrid Training Method",
           url: "/",
-          logo: "/favicon.ico",
+          logo: "/favicon.png",
           sameAs: ["https://instagram.com/studiofitpiripiri"],
         }),
       },
@@ -111,10 +112,10 @@ const pillars = [
 ];
 
 const systems = [
-  { n: "01", t: "Endurance", d: "Resistência máxima para longas distâncias e intensidade prolongada.", img: sysEndurance },
-  { n: "02", t: "Hybrid", d: "O equilíbrio entre força bruta e capacidade cardiovascular.", img: sysHybrid },
-  { n: "03", t: "Strength", d: "Desenvolvimento de torque e potência absoluta sob carga.", img: sysStrength },
-  { n: "04", t: "Conditioning", d: "Eficiência metabólica para dominar qualquer cenário competitivo.", img: sysConditioning },
+  { n: "01", t: "Strength System", d: "Desenvolvimento de força e estrutura.", img: sysStrength },
+  { n: "02", t: "Engine System", d: "Capacidade cardiovascular.", img: sysEndurance },
+  { n: "03", t: "Power System", d: "Potência e velocidade.", img: sysConditioning },
+  { n: "04", t: "Hybrid System", d: "Integração total das capacidades.", img: sysHybrid },
 ];
 
 const posts = [
@@ -178,7 +179,14 @@ function ExtremeCarousel({
   );
 }
 
-
+function CheckBoxIcon({ className = "text-black" }: { className?: string }) {
+  return (
+    <svg className={`w-5 h-5 shrink-0 ${className}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+      <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="2.5" />
+    </svg>
+  );
+}
 
 function Home() {
   return (
@@ -235,7 +243,7 @@ function Home() {
           </h1>
 
           <p className="max-w-md text-sm md:text-base text-muted-foreground mb-10 animate-reveal [animation-delay:350ms] border-l border-chrome/30 pl-4">
-            Performance, treinamento híbrido e formação de treinadores em um único ecossistema de elite.
+            Treinamento híbrido, consultoria online, programas de treino e formação de treinadores em um único ecossistema.
           </p>
           <div className="flex flex-wrap gap-4 animate-reveal [animation-delay:500ms]">
             <a
@@ -336,7 +344,7 @@ function Home() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-32">
             <img
               src={method1}
               alt="Mãos de atleta firmando uma barra olímpica"
@@ -350,11 +358,10 @@ function Home() {
                 [02] — Founding Principle
               </div>
               <blockquote className="font-display text-3xl md:text-5xl uppercase italic leading-[1] mb-8">
-                "A força sem fôlego é vaidade. O fôlego sem força é fragilidade. O atleta híbrido domina os
-                dois."
+                "Desenvolvimento simultâneo de múltiplas capacidades físicas"
               </blockquote>
               <div className="font-mono text-xs text-chrome/50 uppercase tracking-widest mb-10">
-                — G-Force Founding Doctrine
+                — Princípio Corpo Híbrido
               </div>
               <a
                 href={WHATSAPP_URL}
@@ -364,6 +371,104 @@ function Home() {
               >
                 Quero o G Force Method <Phone className="size-4" />
               </a>
+            </div>
+          </div>
+
+          {/* METODOLOGIA */}
+          <div className="pt-24 border-t border-white/10">
+            <div className="grid lg:grid-cols-12 gap-12 mb-20">
+              <div className="lg:col-span-6">
+                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
+                  [02.1] — A Metodologia
+                </div>
+                <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+                  G-FORCE Training Method
+                </h2>
+              </div>
+              <div className="lg:col-span-6">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  A G-FORCE Training Method nasce da integração das principais escolas de treinamento físico do mundo. Não foi criada a partir de uma única linha de pensamento, mas sim da experiência prática e formação em múltiplas disciplinas.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-16 mb-20">
+              {/* Modalidades */}
+              <div>
+                <h3 className="font-display text-2xl uppercase mb-6 tracking-tight flex items-center gap-2">
+                  <span className="size-2 bg-chrome rounded-full animate-pulse" /> Modalidades
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    "Musculação",
+                    "Cross Training",
+                    "Levantamento Olímpico",
+                    "Ginástica e Calistenia",
+                    "Corrida e Endurance",
+                    "Treinamento Funcional"
+                  ].map((m) => (
+                    <div key={m} className="bg-graphite p-4 border border-white/5 hover:border-chrome/30 transition-all flex items-center gap-3 group">
+                      <div className="size-1.5 bg-chrome/55 group-hover:bg-chrome transition-colors rotate-45" />
+                      <span className="font-display text-xs uppercase tracking-wider">{m}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Objetivos */}
+              <div>
+                <h3 className="font-display text-2xl uppercase mb-6 tracking-tight flex items-center gap-2">
+                  <span className="size-2 bg-chrome rounded-full animate-pulse" /> Objetivo do Método
+                </h3>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Desenvolver um atleta de elite robusto, combinando hipertrofia e funcionalidade para torná-lo capaz de:
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    "levantar cargas altas",
+                    "sustentar esforço prolongado",
+                    "se mover com eficiência",
+                    "gerar potência e velocidade",
+                    "resistir à fadiga física e mental",
+                  ].map((o) => (
+                    <li key={o} className="flex items-center gap-3 text-sm font-bold uppercase tracking-tight">
+                      <span className="text-chrome font-bold">✔</span>
+                      <span>{o}</span>
+                    </li>
+                  ))}
+                  <li className="mt-8 pt-4 border-t border-white/10 flex items-center gap-3 text-sm font-display uppercase tracking-widest text-chrome">
+                    <Zap className="size-4 animate-pulse" /> Hipertrofia e Funcionalidade
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Progressão Lógica */}
+            <div className="mt-24 pt-16 border-t border-white/5">
+              <div className="text-center mb-12">
+                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-2">Progression Model</div>
+                <h3 className="font-display text-3xl uppercase italic">Progressão Lógica de Desenvolvimento</h3>
+                <p className="text-sm text-muted-foreground mt-2">Um caminho estruturado: da base ao topo da performance</p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 relative">
+                {[
+                  { n: "01", name: "Movement & Mobility", role: "Base" },
+                  { n: "02", name: "Strength", role: "Força" },
+                  { n: "03", name: "Power", role: "Potência" },
+                  { n: "04", name: "Engine", role: "Fôlego" },
+                  { n: "05", name: "Performance", role: "Topo" },
+                ].map((step, idx) => (
+                  <div key={step.name} className="relative group bg-graphite p-6 border border-white/5 hover:border-chrome/30 transition-all text-center">
+                    <span className="font-mono text-[9px] text-chrome/60 mb-2 block">{step.n} · {step.role}</span>
+                    <h4 className="font-display text-lg uppercase tracking-tight group-hover:text-chrome transition-colors">{step.name}</h4>
+                    {idx < 4 && (
+                      <div className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 z-10 text-chrome/40 text-lg font-bold">
+                        ➔
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -398,12 +503,12 @@ function Home() {
               ))}
             </ul>
             <a
-              href={WHATSAPP_URL}
+              href="https://payfast.greenn.com.br/nnvpxb3"
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] transition-colors"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
             >
-              Quero ser GF Trainer <Phone className="size-4" />
+              CONHECER O CURSO <ArrowRight className="size-4" />
             </a>
           </div>
           <div className="relative aspect-square">
@@ -467,13 +572,237 @@ function Home() {
               ))}
             </div>
             <a
+              href="https://payfast.greenn.com.br/gtq47gc"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
+            >
+              Quero a Mentoria <ArrowRight className="size-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* GF PROGRAMMING */}
+      <section id="programming" className="relative py-32 px-6 md:px-10 bg-graphite border-b border-white/10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-block px-3 py-1 bg-white/10 border border-white/20 font-mono text-[10px] mb-8 uppercase tracking-widest">
+              Online Coaching & Workout Programs
+            </div>
+            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+              GF Programming.
+            </h2>
+            <p className="text-muted-foreground max-w-md mb-12 text-lg leading-relaxed">
+              Acesse a metodologia oficial da G-Force de qualquer lugar. Consultoria online individualizada e programas de treino estruturados para construir o seu corpo híbrido de elite.
+            </p>
+            <ul className="space-y-4 mb-12">
+              {[
+                "Planilhas individuais via app dedicado",
+                "Métricas de performance e progressão de carga",
+                "Programas específicos (Endurance, Força e Híbrido)",
+                "Suporte técnico direto com nossos treinadores",
+                "Ajustes periódicos focados nos seus objetivos",
+              ].map((it, i) => (
+                <li key={it} className="flex items-center gap-4 border-b border-white/10 pb-4">
+                  <span className="text-chrome font-mono text-sm">[{String(i + 1).padStart(2, "0")}]</span>
+                  <span className="uppercase font-bold tracking-tight text-sm md:text-base">{it}</span>
+                </li>
+              ))}
+            </ul>
+            <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] transition-colors"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] transition-colors animate-pulse"
             >
-              Quero a Mentoria <Phone className="size-4" />
+              Acessar Programming <ArrowRight className="size-4" />
             </a>
+          </div>
+          <div className="relative aspect-square">
+            <div className="absolute -inset-4 border border-white/10" />
+            <img
+              src={programmingImg}
+              alt="Atleta acompanhando seu cronograma de treinos em smartphone"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl p-5 border border-white/10">
+              <div className="font-mono text-[10px] uppercase text-chrome/60 mb-1">Vagas</div>
+              <div className="font-display text-2xl text-chrome">LIMITADAS</div>
+            </div>
+            <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-xl px-4 py-2 border border-white/10 font-mono text-[10px] uppercase tracking-widest text-chrome">
+              Consultoria & Planilhas
+            </div>
+          </div>
+        </div>
+
+        {/* PRICING PLANS SECTION */}
+        <div className="max-w-7xl mx-auto mt-24 pt-24 border-t border-white/10">
+          <div className="text-center mb-16">
+            <h3 className="font-display text-4xl md:text-6xl uppercase italic text-[#eaa950] tracking-tight mb-4">
+              Consultoria / Treino Personalizado
+            </h3>
+            <p className="text-base md:text-lg text-white font-semibold max-w-2xl mx-auto mb-2">
+              Vídeos explicativos com cada exercício. Periodização e progressão de carga.
+            </p>
+            <p className="text-sm md:text-base text-[#eaa950] font-medium max-w-2xl mx-auto">
+              Confira os nossos planos de consultoria online para treino personalizado.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-8 pt-6">
+            {/* Card 1: Essencial */}
+            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
+              <div>
+                <div className="bg-[#eaa950] py-5 text-center border-b border-black/10">
+                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
+                    Essencial ( 6meses)
+                  </h4>
+                </div>
+                <div className="p-8">
+                  <p className="text-sm text-neutral-500 mb-6 font-medium">
+                    Construa sua base física sólida de forma estratégica com nossa periodização.
+                  </p>
+                  <ul className="space-y-4">
+                    {[
+                      "Treino personalizado",
+                      "Acesso ao app",
+                      "Suporte via WhatsApp",
+                      "Atualização de treino a cada 8 semanas.",
+                    ].map((feat) => (
+                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
+                        <CheckBoxIcon className="text-black" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="p-8 pt-0">
+                <div className="bg-[#eaa950] rounded-xl py-3 px-6 text-center text-black mb-4">
+                  <div className="font-display text-3xl tracking-wide">R$ 319,00</div>
+                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 6x</div>
+                </div>
+                <a
+                  href="https://payfast.greenn.com.br/8ypa7xs"
+                  target="_blank"
+                  rel="noopener"
+                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-bold shadow-md"
+                >
+                  COMEÇAR AGORA
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2: Premium (Highlighted 6 Months Plan) */}
+            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-2xl md:scale-105 md:-translate-y-4 z-10 border-4 border-[#eaa950] shadow-[0_20px_50px_rgba(234,169,80,0.35)] relative hover:scale-[1.07] transition-all duration-300">
+              <div className="absolute top-3 right-3 bg-black text-[#eaa950] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 rounded font-extrabold animate-pulse">
+                ★ Recomendado
+              </div>
+              <div>
+                <div className="bg-[#eaa950] py-6 text-center border-b border-black/10">
+                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
+                    Premium (6 meses)
+                  </h4>
+                </div>
+                <div className="p-8">
+                  <p className="text-sm text-neutral-500 mb-6 font-medium">
+                    Acelere seus resultados com suporte extra e avaliações físicas programadas.
+                  </p>
+                  <ul className="space-y-4">
+                    {[
+                      "Treino Personalizado",
+                      "Acesso ao app.",
+                      "Suporte via whatsapp",
+                      "Atualização de treino a cada 6 semanas.",
+                      "2 avaliações físicas",
+                    ].map((feat) => (
+                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
+                        <CheckBoxIcon className="text-black" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="p-8 pt-0">
+                <div className="bg-[#eaa950] rounded-xl py-3.5 px-6 text-center text-black mb-4">
+                  <div className="font-display text-4xl tracking-wide font-black">R$ 499,00</div>
+                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 6x</div>
+                </div>
+                <a
+                  href="https://payfast.greenn.com.br/7vmwebd"
+                  target="_blank"
+                  rel="noopener"
+                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white hover:shadow-[0_0_20px_rgba(37,211,102,0.6)] transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-extrabold shadow-lg"
+                >
+                  QUERO RESULTADOS MAIS RÁPIDOS
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3: Anual Premium */}
+            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
+              <div>
+                <div className="bg-[#eaa950] py-5 text-center border-b border-black/10">
+                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
+                    Anual Premium (12 meses)
+                  </h4>
+                </div>
+                <div className="p-8">
+                  <p className="text-sm text-neutral-500 mb-6 font-medium">
+                    A escolha definitiva para transformação de alta performance com acompanhamento anual completo.
+                  </p>
+                  <ul className="space-y-4">
+                    {[
+                      "Maior desconto",
+                      "Treino personalizado",
+                      "Suporte via whatsapp",
+                      "Atualização do treino a cada 6 semanas.",
+                      "4 avaliações físicas",
+                    ].map((feat) => (
+                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
+                        <CheckBoxIcon className="text-black" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="p-8 pt-0">
+                <div className="bg-[#eaa950] rounded-xl py-3 px-6 text-center text-black mb-4">
+                  <div className="font-display text-3xl tracking-wide">R$ 849,00</div>
+                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 12x</div>
+                </div>
+                <a
+                  href="https://payfast.greenn.com.br/39h4y4j"
+                  target="_blank"
+                  rel="noopener"
+                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-bold shadow-md"
+                >
+                  GARANTIR MINHA VAGA
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Footnotes aligning under the cards on desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/5">
+            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
+              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
+              <span className="font-display text-sm uppercase tracking-wider leading-tight">Plano Econômico de 6 meses de treino.</span>
+            </div>
+            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
+              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
+              <span className="font-display text-sm uppercase tracking-wider leading-tight">Uma avaliação física no início do ciclo e outra com 3 meses.</span>
+            </div>
+            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
+              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
+              <span className="font-display text-sm uppercase tracking-wider leading-tight">1 ano de acompanhamento + Avaliações físicas.</span>
+            </div>
           </div>
         </div>
       </section>
@@ -615,14 +944,13 @@ function Home() {
               Studio Fit.<br />A sede.
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Mais de 800m² dedicados ao treinamento híbrido. Rigs, sleds, esteiras manuais, assault bikes
-              e remadores Concept2. A arena onde o método é vivido.
+              9 anos construindo mais que uma academia: uma cultura, uma metodologia e uma energia que você sente desde o primeiro treino. São mais de 330m² dedicados ao treinamento híbrido, musculação e cross training.
             </p>
             <div className="space-y-4 mb-10">
               {[
-                { l: "Localização", v: "Teresina, PI — Brasil" },
-                { l: "Horários", v: "Seg–Sex 05:30 → 22:00 · Sáb 07:00 → 14:00" },
-                { l: "Estrutura", v: "Rigs, sleds, rowers, bikes, sala de mobilidade" },
+                { l: "Localização", v: "PIRIPIRI-PI Rua José Francisco de Carvalho 3 cep 64260-000" },
+                { l: "Horários", v: "SEG-SEX 05:00h às 21:00h / SAB 07:00h às 12:00h / 16:30 às 18:00h" },
+                { l: "Estrutura", v: "Rigs, sleds, remo concept, assault bike, sky erg, esteira curva, esteiras tradicionais, aparelhos essenciais de musculação. Salão completo para cross training e treino funcional." },
               ].map((r) => (
                 <div key={r.l} className="grid grid-cols-3 gap-4 border-b border-white/10 pb-3">
                   <div className="font-mono text-[10px] uppercase tracking-widest text-chrome/50">{r.l}</div>
@@ -631,7 +959,7 @@ function Home() {
               ))}
             </div>
             <a
-              href="https://www.google.com/maps/place/STUDIO+FIT+ACADEMIA/data=!4m2!3m1!1s0x0:0x88b8068cc86dfc40?sa=X&ved=1t:2428&ictx=111"
+              href="https://www.google.com/maps/search/?api=1&query=STUDIO+FIT+ACADEMIA+Piripiri+PI"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-3 px-6 py-3 border border-white/20 font-display uppercase text-sm tracking-widest hover:bg-white/10 transition-colors"
@@ -640,7 +968,7 @@ function Home() {
             </a>
             <div className="mt-8 w-full aspect-[16/10] border border-white/10 overflow-hidden">
               <iframe
-                src="https://maps.google.com/maps?q=STUDIO+FIT+ACADEMIA,Teresina,PI&hl=pt&z=17&output=embed"
+                src="https://maps.google.com/maps?q=STUDIO+FIT+ACADEMIA,Piripiri,PI&hl=pt&z=17&output=embed"
                 title="Localização Studio Fit Academia"
                 className="w-full h-full"
                 style={{ border: 0 }}
@@ -771,9 +1099,11 @@ function Home() {
           <h2 className="font-display text-6xl md:text-8xl lg:text-9xl uppercase italic mb-12 tracking-tighter leading-[0.85]">
             Comece a evoluir.<br />Build the Machine.
           </h2>
-          <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
-            Junte-se ao ecossistema G-Force. Treinadores, atletas e a próxima geração de profissionais de
-            elite começam aqui.
+          <blockquote className="text-chrome text-lg md:text-xl font-display uppercase italic mb-6 max-w-2xl mx-auto">
+            "Treinar não é escolher uma capacidade. É desenvolver todas."
+          </blockquote>
+          <p className="text-muted-foreground text-base md:text-lg mb-12 max-w-xl mx-auto leading-relaxed">
+            A G-FORCE Hybrid Training Method representa uma nova geração de treinamento físico. Um sistema que une ciência, prática e performance.
           </p>
           <a
             href={WHATSAPP_URL}
@@ -805,6 +1135,7 @@ function Home() {
                 <li><a href="#method" className="hover:text-chrome transition-colors">Metodologia</a></li>
                 <li><a href="#trainer" className="hover:text-chrome transition-colors">GF Trainer</a></li>
                 <li><a href="#mentor" className="hover:text-chrome transition-colors">GF Mentor</a></li>
+                <li><a href="#programming" className="hover:text-chrome transition-colors">GF Programming</a></li>
                 <li><a href="#systems" className="hover:text-chrome transition-colors">Sistemas</a></li>
               </ul>
             </div>
@@ -835,7 +1166,7 @@ function Home() {
                   </a>
                 </li>
                 <li><a href="mailto:contato@gforce.com" className="hover:text-chrome transition-colors">contato@gforce.com</a></li>
-                <li className="text-muted-foreground">Teresina, PI — Brasil</li>
+                <li className="text-muted-foreground">Piripiri, PI — Brasil</li>
               </ul>
             </div>
           </div>
