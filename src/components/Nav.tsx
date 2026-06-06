@@ -14,6 +14,7 @@ export function Nav() {
         <a href="#method" className="hover:text-chrome transition-colors">Method</a>
         <a href="#trainer" className="hover:text-chrome transition-colors">Trainer</a>
         <a href="#mentor" className="hover:text-chrome transition-colors">Mentor</a>
+        <a href="#programming" className="hover:text-chrome transition-colors">Programming</a>
         <a href="#systems" className="hover:text-chrome transition-colors">Systems</a>
         <a href="#events" className="hover:text-chrome transition-colors">Events</a>
         <a href="#studio" className="hover:text-chrome transition-colors">Studio</a>
