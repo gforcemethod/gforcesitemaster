@@ -263,9 +263,9 @@ function Home() {
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 animate-reveal [animation-delay:700ms]">
             {[
               { v: "2.000+", l: "Alunos" },
-              { v: "300+", l: "Treinadores Certificados" },
+              { v: "+50", l: "Treinadores Certificados" },
               { v: "10+", l: "Eventos Realizados" },
-              { v: "1", l: "Método Proprietário" },
+              { v: "1", l: "Método com 9 anos de desenvolvimento" },
             ].map((s) => (
               <div key={s.l} className="flex items-start gap-3">
                 <div className="h-8 w-px bg-chrome/40 mt-1" />
@@ -283,7 +283,6 @@ function Home() {
         {/* SCROLL INDICATOR */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60">
           <span>Scroll</span>
-          <span>Para Explorar</span>
           <span className="h-8 w-px bg-chrome/40 animate-pulse" />
         </div>
       </section>
@@ -519,11 +518,11 @@ function Home() {
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover grayscale"
             />
             <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl p-5 border border-white/10">
               <div className="font-mono text-[10px] uppercase text-chrome/60 mb-1">Current Cohort</div>
-              <div className="font-display text-2xl">92% OCUPADO</div>
+              <div className="font-display text-2xl">LANÇAMENTO EM BREVE</div>
             </div>
             <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-xl px-4 py-2 border border-white/10 font-mono text-[10px] uppercase tracking-widest text-chrome">
               Cohort 2026 · Q1
@@ -980,7 +979,7 @@ function Home() {
           </div>
           <div className="lg:col-span-7">
             <div className="w-full aspect-[4/3] border border-white/10 overflow-hidden">
-              <img src={studioTeam} alt="Turma Studio Fit Academia" className="w-full h-full object-cover" />
+              <img src={studioTeam} alt="Turma Studio Fit Academia" className="w-full h-full object-cover grayscale" />
             </div>
           </div>
         </div>
