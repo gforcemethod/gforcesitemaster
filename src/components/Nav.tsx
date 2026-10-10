@@ -19,7 +19,6 @@ export function Nav() {
         <a href="#systems" className="hover:text-chrome transition-colors">Systems</a>
         <a href="#events" className="hover:text-chrome transition-colors">Events</a>
         <a href="#studio" className="hover:text-chrome transition-colors">Studio</a>
-        <a href="#blog" className="hover:text-chrome transition-colors">Blog</a>
         <a
           href="#cta"
           className="ml-2 inline-flex items-center gap-2 border border-foreground/60 px-4 py-2.5 hover:bg-foreground hover:text-background transition-colors"

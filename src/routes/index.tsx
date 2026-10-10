@@ -8,13 +8,13 @@ import { WhatsAppFab } from "@/components/WhatsAppFab";
 import { Faq } from "@/components/Faq";
 
 
-import heroSled from "@/assets/extreme-1.png";
+import heroSled from "@/assets/evento-gilles-largada.jpg";
 import heroPortrait from "@/assets/hero-portrait.png";
 import smokeImg from "@/assets/smoke.png";
-import sysEndurance from "@/assets/extreme-1.png";
-import sysHybrid from "@/assets/extreme-3.png";
-import sysStrength from "@/assets/studio-experience-1.jpg";
-import sysConditioning from "@/assets/extreme-5.png";
+import sysEndurance from "@/assets/evento-trilha-corrida.jpg";
+import sysHybrid from "@/assets/evento-rastejo-lama.jpg";
+import sysStrength from "@/assets/evento-forca-pneu.jpg";
+import sysConditioning from "@/assets/evento-subida-rocha.jpg";
 import trainerBadge from "@/assets/trainer-badge.jpg";
 
 import extreme1 from "@/assets/extreme-1.png";
@@ -29,7 +29,7 @@ import studioExperience4 from "@/assets/studio-experience-4.jpg";
 import studioExperience5 from "@/assets/studio-experience-5.jpg";
 
 
-import studioInterior from "@/assets/studio-experience-4.jpg";
+import studioInterior from "@/assets/evento-turma-extreme.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
 import method1 from "@/assets/method-1.jpg";
 import mentorImg from "@/assets/mentor-new.jpg";
@@ -103,12 +103,12 @@ const pillars = [
   {
     icon: Award,
     title: "Autoridade",
-    desc: "Selo oficial reconhecido pela comunidade híbrida nacional. Credencial técnica de mercado.",
+    desc: "Uma metodologia construída a partir de anos de estudo, prática, experimentação e operação em um Centro de Treinamento real.",
   },
   {
     icon: Trophy,
     title: "Comunidade",
-    desc: "Rede global de treinadores e atletas G-Force. Mentoria contínua e eventos de elite.",
+    desc: "Método → Pessoas → Espaço → Operação → Negócio.",
   },
 ];
 
@@ -211,7 +211,7 @@ function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroSled}
-            alt="Extreme Race — atletas G-FORCE"
+            alt="Gilles na largada da Extreme Race"
             width={1920}
             height={1080}
             className="w-full h-full object-cover brightness-[0.45]"
@@ -335,11 +335,6 @@ function Home() {
                 O G-Force Method não é exercício. É uma arquitetura de treinamento desenhada para construir
                 atletas resilientes, capazes de dominar qualquer arena — da corrida de endurance ao
                 levantamento olímpico, da prova híbrida ao trabalho metabólico de elite.
-              </p>
-              <p className="text-base text-muted-foreground/70 leading-relaxed">
-                Cada pilar foi auditado e refinado através de milhares de horas de prática em campo. O
-                resultado é um sistema reproduzível, mensurável e capaz de formar tanto atletas quanto a
-                próxima geração de treinadores híbridos.
               </p>
             </div>
           </div>
@@ -505,7 +500,6 @@ function Home() {
               {[
                 "08 Módulos de especialização técnica",
                 "Selo oficial G-Force Trainer",
-                "Acesso à plataforma e diretório global",
                 "Workshops práticos no Studio Fit",
                 "Comunidade fechada de treinadores certificados",
               ].map((it, i) => (
@@ -601,7 +595,7 @@ function Home() {
         <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
           <img
             src={studioInterior}
-            alt="Turma Studio Fit"
+            alt="Equipe G-FORCE na Extreme Race 2026"
             loading="lazy"
             width={1920}
             height={1080}
@@ -1161,54 +1155,11 @@ function Home() {
         </div>
       </section>
 
-      {/* BLOG */}
-      <section id="blog" className="py-32 px-6 md:px-10 border-t border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-end mb-16 flex-wrap gap-6">
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [09] — Journal
-              </div>
-              <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
-                Journal.
-              </h2>
-            </div>
-            <a
-              href="#"
-              className="font-mono text-xs uppercase tracking-widest text-chrome hover:text-foreground transition-colors flex items-center gap-2"
-            >
-              Ver todos <ArrowRight className="size-4" />
-            </a>
-          </div>
-          <div className="grid md:grid-cols-3 gap-px bg-white/10">
-            {posts.map((p, i) => (
-              <article
-                key={i}
-                className="bg-background p-8 hover:bg-graphite transition-colors cursor-pointer group"
-              >
-                <div className="flex justify-between items-center mb-12">
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-chrome/60">
-                    {p.tag}
-                  </span>
-                  <span className="font-mono text-[10px] text-chrome/40">{p.read}</span>
-                </div>
-                <h3 className="font-display text-2xl md:text-3xl uppercase leading-[1] mb-8 group-hover:text-chrome transition-colors">
-                  {p.title}
-                </h3>
-                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-chrome">
-                  Ler <ArrowRight className="size-3" />
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section id="faq" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
         <div className="max-w-5xl mx-auto">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-            [10] — FAQ
+            [09] — FAQ
           </div>
           <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-16">
             Perguntas<br />frequentes.
@@ -1282,7 +1233,6 @@ function Home() {
                 <li><a href="#events" className="hover:text-chrome transition-colors">Extreme Race</a></li>
                 <li><a href="#events" className="hover:text-chrome transition-colors">Studio Experience</a></li>
                 <li><a href="#studio" className="hover:text-chrome transition-colors">Studio Fit</a></li>
-                <li><a href="#blog" className="hover:text-chrome transition-colors">Journal</a></li>
               </ul>
             </div>
             <div className="md:col-span-3">
