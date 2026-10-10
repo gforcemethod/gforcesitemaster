@@ -582,6 +582,111 @@ function Home() {
         </div>
       </section>
 
+      {/* G-FORCE SYSTEM — LICENCIAMENTO */}
+      <section id="licenca" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
+            [04] — Licensing & Implementation
+          </div>
+          <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+            Construa com um sistema.<br />
+            <span className="text-chrome/50">Seu centro de treinamento híbrido.</span>
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-16 max-w-3xl">
+            Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
+            O G-FORCE System entrega a metodologia, o projeto de implantação, a formação da equipe,
+            o suporte e a licença oficial para operar no padrão G-FORCE.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-white/10 mb-16">
+            {["Metodologia", "Implantação", "Formação", "Operação", "Suporte", "Licenciamento"].map((c, i) => (
+              <div key={c} className="bg-background p-6">
+                <div className="font-mono text-[10px] text-chrome/60 mb-3">[0{i + 1}]</div>
+                <div className="font-display text-lg uppercase">{c}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            {[
+              {
+                name: "G-FORCE System",
+                tag: "Para implementar com autonomia",
+                items: [
+                  "Metodologia G-FORCE + Manual Oficial",
+                  "Projeto de implantação",
+                  "Treinamento presencial: 1 dia, até 5 treinadores",
+                  "Material de apoio",
+                  "Suporte: 3 meses",
+                  "Licença: 1 ano",
+                ],
+                price: "R$ 6.697",
+                cta: "Quero o System",
+                msg: "Quero saber mais sobre o G-FORCE System",
+                pro: false,
+              },
+              {
+                name: "G-FORCE System PRO",
+                tag: "Para implantar com acompanhamento próximo",
+                items: [
+                  "Tudo do System +",
+                  "Projeto completo do espaço",
+                  "Definição de equipamentos",
+                  "Análise financeira",
+                  "Consultoria comercial",
+                  "Acompanhamento da implantação",
+                  "Treinamento presencial: 2 dias, até 5 treinadores",
+                  "Suporte: 6 meses",
+                  "Licença: 2 anos",
+                ],
+                price: "R$ 14.997",
+                cta: "Quero o System PRO",
+                msg: "Quero saber mais sobre o G-FORCE System PRO",
+                pro: true,
+              },
+            ].map((plan) => (
+              <div
+                key={plan.name}
+                className={`bg-background p-8 md:p-10 flex flex-col border ${plan.pro ? "border-[#25D366]" : "border-white/10"}`}
+              >
+                <h3 className="font-display text-3xl md:text-4xl uppercase italic leading-none mb-3">{plan.name}</h3>
+                <p className="text-muted-foreground mb-8">{plan.tag}</p>
+                <ul className="space-y-3 mb-10 flex-1">
+                  {plan.items.map((it) => (
+                    <li key={it} className="flex gap-3 text-sm">
+                      <span className="text-[#25D366]" aria-hidden>✓</span>
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-2">Investimento</div>
+                <div className="font-display text-4xl md:text-5xl mb-8">{plan.price}</div>
+                <a
+                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
+                >
+                  {plan.cta} <ArrowRight className="size-4" />
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground mb-8">
+            {["Diagnóstico", "Estruturação", "Formação", "Implantação", "Acompanhamento", "Operação"].map((step, i, arr) => (
+              <span key={step} className="flex items-center gap-4">
+                {step}
+                {i < arr.length - 1 && <span className="text-chrome/50" aria-hidden>→</span>}
+              </span>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Licença renovável. Despesas de viagem do treinamento presencial por conta do contratante.
+          </p>
+        </div>
+      </section>
+
       {/* GF PROGRAMMING */}
       <section id="programming" className="relative py-32 px-6 md:px-10 bg-graphite border-b border-white/10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -812,7 +917,7 @@ function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [04] — Training Systems
+                [05] — Training Systems
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
                 Os quatro sistemas.
@@ -854,7 +959,7 @@ function Home() {
           <div className="flex justify-between items-end mb-16 flex-wrap gap-6">
             <div>
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [05] — Live Events
+                [06] — Live Events
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
                 A arena chama.
@@ -937,7 +1042,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-              [06] — HQ
+              [07] — HQ
             </div>
             <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
               Studio Fit.<br />A sede.
@@ -991,7 +1096,7 @@ function Home() {
           <div className="flex justify-between items-end mb-12 flex-wrap gap-4">
             <div>
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [07] — Social
+                [08] — Social
               </div>
               <h2 className="font-display text-4xl md:text-6xl uppercase italic">@studiofitpiripiri</h2>
             </div>
@@ -1031,7 +1136,7 @@ function Home() {
           <div className="flex justify-between items-end mb-16 flex-wrap gap-6">
             <div>
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [08] — Journal
+                [09] — Journal
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
                 Journal.
@@ -1072,7 +1177,7 @@ function Home() {
       <section id="faq" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
         <div className="max-w-5xl mx-auto">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-            [09] — FAQ
+            [10] — FAQ
           </div>
           <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-16">
             Perguntas<br />frequentes.
