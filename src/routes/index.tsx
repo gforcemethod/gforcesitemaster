@@ -984,7 +984,7 @@ function Home() {
               >
                 <img
                   src={img}
-                  alt="Post @studiofitpiripiri"
+                  alt="Studio Fit Piripiri"
                   loading="lazy"
                   width={900}
                   height={900}
