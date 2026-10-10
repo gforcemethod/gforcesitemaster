@@ -337,9 +337,9 @@ function Home() {
             </div>
             <div className="lg:col-span-6 lg:col-start-7">
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                O G-Force Method não é exercício. É uma arquitetura de treinamento desenhada para construir
-                atletas resilientes, capazes de dominar qualquer arena — da corrida de endurance ao
-                levantamento olímpico, da prova híbrida ao trabalho metabólico de elite.
+                O G-Force Method não é exercício. É um ecossistema de treinamento desenhado para construir
+                atletas resilientes, capazes de dominar qualquer área — da corrida de endurance ao LPO,
+                da prova híbrida ao trabalho de musculação.
               </p>
             </div>
           </div>
