@@ -456,32 +456,15 @@ function Home() {
               </div>
             </div>
 
-            {/* Progressão Lógica */}
-            <div className="mt-24 pt-16 border-t border-white/5">
-              <div className="text-center mb-12">
-                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-2">Progression Model</div>
-                <h3 className="font-display text-3xl uppercase italic">Progressão Lógica de Desenvolvimento</h3>
-                <p className="text-sm text-muted-foreground mt-2">Um caminho estruturado: da base ao topo da performance</p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 relative">
-                {[
-                  { n: "01", name: "Movement & Mobility", role: "Base" },
-                  { n: "02", name: "Strength", role: "Força" },
-                  { n: "03", name: "Power", role: "Potência" },
-                  { n: "04", name: "Engine", role: "Fôlego" },
-                  { n: "05", name: "Performance", role: "Topo" },
-                ].map((step, idx) => (
-                  <div key={step.name} className="relative group bg-graphite p-6 border border-white/5 hover:border-chrome/30 transition-all text-center">
-                    <span className="font-mono text-[9px] text-chrome/60 mb-2 block">{step.n} · {step.role}</span>
-                    <h4 className="font-display text-lg uppercase tracking-tight group-hover:text-chrome transition-colors">{step.name}</h4>
-                    {idx < 4 && (
-                      <div className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 z-10 text-chrome/40 text-lg font-bold">
-                        ➔
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+            {/* G-FORCE SYSTEM — chamada */}
+            <div className="mt-24 pt-16 border-t border-white/5 text-center">
+              <h3 className="font-display text-4xl md:text-6xl uppercase italic leading-[0.9] mb-6">G-FORCE SYSTEM</h3>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-3">
+                Sistema completo para implantação de um Centro de Treinamento Híbrido G-FORCE.
+              </p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-chrome/70">
+                Do treinador ao dono do Studio.
+              </p>
             </div>
           </div>
         </div>
