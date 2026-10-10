@@ -352,16 +352,16 @@ function Home() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-32">
+          <div className="grid md:grid-cols-5 gap-10 items-center mb-20">
             <img
               src={method1}
               alt="Aluna Studio Fit em treino"
               loading="lazy"
-              width={800}
-              height={1024}
-              className="w-full aspect-[4/5] object-cover grayscale"
+              width={472}
+              height={782}
+              className="md:col-span-2 w-full max-w-[340px] mx-auto aspect-[3/4] object-cover object-top grayscale"
             />
-            <div>
+            <div className="md:col-span-3">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-4">
                 [02] — Founding Principle
               </div>
@@ -599,7 +599,7 @@ function Home() {
             loading="lazy"
             width={1920}
             height={1080}
-            className="absolute inset-0 w-full h-full object-cover opacity-25 grayscale group-hover:opacity-40 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
+            className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-40 grayscale group-hover:opacity-55 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
           />
           <Smoke className="opacity-60" />
           <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/70 to-graphite/30" />
@@ -767,172 +767,6 @@ function Home() {
           </div>
         </div>
 
-        {/* PRICING PLANS SECTION */}
-        <div className="max-w-7xl mx-auto mt-24 pt-24 border-t border-white/10">
-          <div className="text-center mb-16">
-            <h3 className="font-display text-4xl md:text-6xl uppercase italic text-[#eaa950] tracking-tight mb-4">
-              Consultoria / Treino Personalizado
-            </h3>
-            <p className="text-base md:text-lg text-white font-semibold max-w-2xl mx-auto mb-2">
-              Vídeos explicativos com cada exercício. Periodização e progressão de carga.
-            </p>
-            <p className="text-sm md:text-base text-[#eaa950] font-medium max-w-2xl mx-auto">
-              Confira os nossos planos de consultoria online para treino personalizado.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-8 pt-6">
-            {/* Card 1: Essencial */}
-            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
-              <div>
-                <div className="bg-[#eaa950] py-5 text-center border-b border-black/10">
-                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
-                    Essencial ( 6meses)
-                  </h4>
-                </div>
-                <div className="p-8">
-                  <p className="text-sm text-neutral-500 mb-6 font-medium">
-                    Construa sua base física sólida de forma estratégica com nossa periodização.
-                  </p>
-                  <ul className="space-y-4">
-                    {[
-                      "Treino personalizado",
-                      "Acesso ao app",
-                      "Suporte via WhatsApp",
-                      "Atualização de treino a cada 8 semanas.",
-                    ].map((feat) => (
-                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
-                        <CheckBoxIcon className="text-black" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="p-8 pt-0">
-                <div className="bg-[#eaa950] rounded-xl py-3 px-6 text-center text-black mb-4">
-                  <div className="font-display text-3xl tracking-wide">R$ 319,00</div>
-                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 6x</div>
-                </div>
-                <a
-                  href="https://payfast.greenn.com.br/8ypa7xs"
-                  target="_blank"
-                  rel="noopener"
-                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-bold shadow-md"
-                >
-                  COMEÇAR AGORA
-                </a>
-              </div>
-            </div>
-
-            {/* Card 2: Premium (Highlighted 6 Months Plan) */}
-            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-2xl md:scale-105 md:-translate-y-4 z-10 border-4 border-[#eaa950] shadow-[0_20px_50px_rgba(234,169,80,0.35)] relative hover:scale-[1.07] transition-all duration-300">
-              <div className="absolute top-3 right-3 bg-black text-[#eaa950] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 rounded font-extrabold animate-pulse">
-                ★ Recomendado
-              </div>
-              <div>
-                <div className="bg-[#eaa950] py-6 text-center border-b border-black/10">
-                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
-                    Premium (6 meses)
-                  </h4>
-                </div>
-                <div className="p-8">
-                  <p className="text-sm text-neutral-500 mb-6 font-medium">
-                    Acelere seus resultados com suporte extra e avaliações físicas programadas.
-                  </p>
-                  <ul className="space-y-4">
-                    {[
-                      "Treino Personalizado",
-                      "Acesso ao app.",
-                      "Suporte via whatsapp",
-                      "Atualização de treino a cada 6 semanas.",
-                      "2 avaliações físicas",
-                    ].map((feat) => (
-                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
-                        <CheckBoxIcon className="text-black" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="p-8 pt-0">
-                <div className="bg-[#eaa950] rounded-xl py-3.5 px-6 text-center text-black mb-4">
-                  <div className="font-display text-4xl tracking-wide font-black">R$ 499,00</div>
-                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 6x</div>
-                </div>
-                <a
-                  href="https://payfast.greenn.com.br/7vmwebd"
-                  target="_blank"
-                  rel="noopener"
-                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white hover:shadow-[0_0_20px_rgba(37,211,102,0.6)] transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-extrabold shadow-lg"
-                >
-                  QUERO RESULTADOS MAIS RÁPIDOS
-                </a>
-              </div>
-            </div>
-
-            {/* Card 3: Anual Premium */}
-            <div className="bg-white text-black rounded-2xl flex flex-col justify-between overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
-              <div>
-                <div className="bg-[#eaa950] py-5 text-center border-b border-black/10">
-                  <h4 className="font-display text-2xl uppercase tracking-wider text-black">
-                    Anual Premium (12 meses)
-                  </h4>
-                </div>
-                <div className="p-8">
-                  <p className="text-sm text-neutral-500 mb-6 font-medium">
-                    A escolha definitiva para transformação de alta performance com acompanhamento anual completo.
-                  </p>
-                  <ul className="space-y-4">
-                    {[
-                      "Maior desconto",
-                      "Treino personalizado",
-                      "Suporte via whatsapp",
-                      "Atualização do treino a cada 6 semanas.",
-                      "4 avaliações físicas",
-                    ].map((feat) => (
-                      <li key={feat} className="flex items-start gap-3 text-neutral-800 text-sm font-semibold">
-                        <CheckBoxIcon className="text-black" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="p-8 pt-0">
-                <div className="bg-[#eaa950] rounded-xl py-3 px-6 text-center text-black mb-4">
-                  <div className="font-display text-3xl tracking-wide">R$ 849,00</div>
-                  <div className="font-mono text-[10px] uppercase tracking-wider font-extrabold mt-0.5 opacity-90">Parcelado em até 12x</div>
-                </div>
-                <a
-                  href="https://payfast.greenn.com.br/39h4y4j"
-                  target="_blank"
-                  rel="noopener"
-                  className="block w-full py-4 bg-[#25D366] text-background hover:bg-[#128C7E] hover:text-white transition-all rounded-xl font-display uppercase tracking-widest text-center text-sm font-bold shadow-md"
-                >
-                  GARANTIR MINHA VAGA
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Footnotes aligning under the cards on desktop */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/5">
-            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
-              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
-              <span className="font-display text-sm uppercase tracking-wider leading-tight">Plano Econômico de 6 meses de treino.</span>
-            </div>
-            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
-              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
-              <span className="font-display text-sm uppercase tracking-wider leading-tight">Uma avaliação física no início do ciclo e outra com 3 meses.</span>
-            </div>
-            <div className="flex items-start gap-3 text-chrome hover:text-white transition-colors duration-200">
-              <CheckBoxIcon className="text-[#eaa950] mt-0.5" />
-              <span className="font-display text-sm uppercase tracking-wider leading-tight">1 ano de acompanhamento + Avaliações físicas.</span>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* SYSTEMS */}
