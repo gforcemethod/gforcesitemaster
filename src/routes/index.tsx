@@ -32,7 +32,7 @@ import studioExperience5 from "@/assets/studio-experience-5.jpg";
 import studioInterior from "@/assets/evento-turma-extreme.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
 import method1 from "@/assets/method-1.jpg";
-import mentorImg from "@/assets/mentor-new.jpg";
+import mentorImg from "@/assets/podcast-gforce-system.jpg";
 import igFeed from "@/assets/ig-feed.jpg";
 import programmingImg from "@/assets/gilles-corrida.jpg";
 
@@ -545,11 +545,11 @@ function Home() {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <img
               src={mentorImg}
-              alt="Mentoria executiva G-Force para treinadores"
+              alt="Podcast G-FORCE System"
               loading="lazy"
-              width={1200}
-              height={1408}
-              className="w-full aspect-[4/5] object-cover grayscale"
+              width={1672}
+              height={941}
+              className="w-full aspect-[16/10] object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
           <div className="lg:col-span-7 order-1 lg:order-2">
