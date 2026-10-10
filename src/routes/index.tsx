@@ -8,12 +8,13 @@ import { WhatsAppFab } from "@/components/WhatsAppFab";
 import { Faq } from "@/components/Faq";
 
 
-import heroSled from "@/assets/hero-sled.jpg";
+import heroSled from "@/assets/extreme-1.png";
 import heroPortrait from "@/assets/hero-portrait.png";
-import sysEndurance from "@/assets/system-endurance.jpg";
-import sysHybrid from "@/assets/system-hybrid.jpg";
-import sysStrength from "@/assets/system-strength.jpg";
-import sysConditioning from "@/assets/system-conditioning.jpg";
+import smokeImg from "@/assets/smoke.png";
+import sysEndurance from "@/assets/extreme-1.png";
+import sysHybrid from "@/assets/extreme-3.png";
+import sysStrength from "@/assets/studio-experience-1.jpg";
+import sysConditioning from "@/assets/extreme-5.png";
 import trainerBadge from "@/assets/trainer-badge.jpg";
 
 import extreme1 from "@/assets/extreme-1.png";
@@ -28,12 +29,12 @@ import studioExperience4 from "@/assets/studio-experience-4.jpg";
 import studioExperience5 from "@/assets/studio-experience-5.jpg";
 
 
-import studioInterior from "@/assets/studio-interior.jpg";
+import studioInterior from "@/assets/studio-experience-4.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
 import method1 from "@/assets/method-1.jpg";
 import mentorImg from "@/assets/mentor-new.jpg";
 import igFeed from "@/assets/ig-feed.jpg";
-import programmingImg from "@/assets/programming.png";
+import programmingImg from "@/assets/gilles-corrida.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -110,6 +111,18 @@ const pillars = [
     desc: "Rede global de treinadores e atletas G-Force. Mentoria contínua e eventos de elite.",
   },
 ];
+
+function Smoke({ className = "" }: { className?: string }) {
+  return (
+    <img
+      src={smokeImg}
+      alt=""
+      aria-hidden
+      loading="lazy"
+      className={`pointer-events-none absolute inset-0 w-full h-full object-cover mix-blend-screen animate-smoke ${className}`}
+    />
+  );
+}
 
 const systems = [
   { n: "01", t: "Strength System", d: "Desenvolvimento de força e estrutura.", img: sysStrength },
@@ -198,11 +211,12 @@ function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroSled}
-            alt="Atleta híbrido em treino de alta performance sob iluminação de arena"
+            alt="Extreme Race — atletas G-FORCE"
             width={1920}
             height={1080}
             className="w-full h-full object-cover brightness-[0.45]"
           />
+          <Smoke className="opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-background/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-background/40" />
         </div>
@@ -211,7 +225,7 @@ function Home() {
         <div className="lg:hidden absolute z-[5] inset-x-0 top-0 h-[65vh] pointer-events-none">
           <img
             src={heroPortrait}
-            alt="Atleta de elite levantando barra com anilhas pesadas"
+            alt="Gilles — G-FORCE Hybrid Training Method"
             className="w-full h-full object-cover object-top"
 
           />
@@ -222,7 +236,7 @@ function Home() {
         <div className="hidden lg:block absolute z-[5] right-0 top-0 bottom-0 w-[55%] pointer-events-none">
           <img
             src={heroPortrait}
-            alt="Atleta de elite levantando barra com anilhas pesadas"
+            alt="Gilles — G-FORCE Hybrid Training Method"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
@@ -587,25 +601,27 @@ function Home() {
         <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
           <img
             src={studioInterior}
-            alt="Centro de Treinamento Híbrido estruturado no padrão G-FORCE"
+            alt="Turma Studio Fit"
             loading="lazy"
             width={1920}
             height={1080}
             className="absolute inset-0 w-full h-full object-cover opacity-25 grayscale group-hover:opacity-40 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
           />
+          <Smoke className="opacity-60" />
           <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/70 to-graphite/30" />
           <div className="relative z-10 max-w-7xl mx-auto">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6 flex items-center gap-3">
-              <span className="w-12 h-px bg-chrome/40" /> [04] — Licensing & Implementation
+              <span className="w-12 h-px bg-chrome/40" /> [04] — G-FORCE System
             </div>
-            <h2 className="font-display text-5xl md:text-8xl uppercase italic leading-[0.9] mb-8 max-w-5xl">
-              Construa com um sistema.<br />
-              <span className="text-chrome/50">Seu centro de treinamento híbrido.</span>
+            <h2 className="font-display text-5xl md:text-8xl uppercase italic leading-[0.9] mb-6 max-w-5xl">
+              Construa com um sistema.
             </h2>
+            <p className="font-display text-2xl md:text-4xl uppercase italic leading-[1] text-chrome/50 mb-8 max-w-4xl">
+              O sistema para implantação e operação de um Centro de Treinamento Híbrido.
+            </p>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl border-l border-chrome/30 pl-5">
               Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
-              O G-FORCE System entrega a metodologia, o projeto de implantação, a formação da equipe,
-              o suporte e a licença oficial para operar no padrão G-FORCE.
+              Você não recebe apenas uma metodologia. Você recebe um sistema para colocá-la em operação.
             </p>
           </div>
         </div>
@@ -624,36 +640,36 @@ function Home() {
             {[
               {
                 name: "G-FORCE System",
-                tag: "Para implementar com autonomia",
+                tag: "Para quem quer receber o sistema e implementar com maior autonomia.",
                 items: [
-                  "Metodologia G-FORCE + Manual Oficial",
-                  "Projeto de implantação",
-                  "Treinamento presencial: 1 dia, até 5 treinadores",
-                  "Material de apoio",
-                  "Suporte: 3 meses",
-                  "Licença: 1 ano",
+                  "Metodologia G-FORCE — Manual, sistemas, aulas, progressões, adaptações e testes.",
+                  "Projeto de implantação — Estrutura, organização do espaço, equipamentos, estações, fluxo e capacidade.",
+                  "Treinamento presencial — 1 dia com a equipe. Até 5 treinadores.",
+                  "Material de apoio — Materiais oficiais para estudo, consulta e aplicação.",
+                  "Suporte — WhatsApp exclusivo + reuniões de acompanhamento. Até 3 meses.",
+                  "Licença — 1 ano de utilização da metodologia, identidade e materiais autorizados.",
                 ],
                 price: "R$ 6.697",
-                cta: "Quero o System",
+                cta: "G-FORCE SYSTEM",
                 msg: "Quero saber mais sobre o G-FORCE System",
                 pro: false,
               },
               {
                 name: "G-FORCE System PRO",
-                tag: "Para implantar com acompanhamento próximo",
+                tag: "Para quem quer receber o sistema e contar com acompanhamento próximo durante a implantação.",
                 items: [
-                  "Tudo do System +",
-                  "Projeto completo do espaço",
-                  "Definição de equipamentos",
-                  "Análise financeira",
-                  "Consultoria comercial",
-                  "Acompanhamento da implantação",
-                  "Treinamento presencial: 2 dias, até 5 treinadores",
-                  "Suporte: 6 meses",
-                  "Licença: 2 anos",
+                  "Tudo do G-FORCE SYSTEM +",
+                  "Projeto completo do espaço — Análise, layout, áreas, fluxo e capacidade.",
+                  "Definição de equipamentos — Lista, prioridades, investimento e organização da compra.",
+                  "Análise financeira — Investimento inicial, custos, capacidade, precificação, ticket e cenários.",
+                  "Treinamento presencial — 2 dias com a equipe. Até 5 treinadores.",
+                  "Consultoria comercial — Planos, preços, horários, captação, retenção e campanhas.",
+                  "Acompanhamento da implantação — Orientação nas principais etapas de implementação.",
+                  "Suporte — WhatsApp + reuniões + acompanhamento estratégico. 6 meses.",
+                  "Licença — 2 anos de utilização da metodologia, identidade e materiais autorizados.",
                 ],
                 price: "R$ 14.997",
-                cta: "Quero o System PRO",
+                cta: "G-FORCE SYSTEM PRO",
                 msg: "Quero saber mais sobre o G-FORCE System PRO",
                 pro: true,
               },
@@ -740,12 +756,13 @@ function Home() {
             <div className="absolute -inset-4 border border-white/10" />
             <img
               src={programmingImg}
-              alt="Atleta acompanhando seu cronograma de treinos em smartphone"
+              alt="Gilles em treino de corrida"
               loading="lazy"
               width={1024}
               height={1024}
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none"><Smoke className="opacity-45" /></div>
             <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl p-5 border border-white/10">
               <div className="font-mono text-[10px] uppercase text-chrome/60 mb-1">Vagas</div>
               <div className="font-display text-2xl text-chrome">LIMITADAS</div>
@@ -955,6 +972,7 @@ function Home() {
                 height={1024}
                 className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale group-hover:opacity-50 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
               />
+              <Smoke className="opacity-35" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="relative z-10">
                 <span className="font-mono text-[10px] text-chrome/50 mb-2 block">{s.n} / 04</span>
