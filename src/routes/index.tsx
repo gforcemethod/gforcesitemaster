@@ -583,26 +583,39 @@ function Home() {
       </section>
 
       {/* G-FORCE SYSTEM — LICENCIAMENTO */}
-      <section id="licenca" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-            [04] — Licensing & Implementation
+      <section id="licenca" className="relative bg-graphite border-y border-white/10 overflow-hidden">
+        <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
+          <img
+            src={studioInterior}
+            alt="Centro de Treinamento Híbrido estruturado no padrão G-FORCE"
+            loading="lazy"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover opacity-25 grayscale group-hover:opacity-40 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/70 to-graphite/30" />
+          <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6 flex items-center gap-3">
+              <span className="w-12 h-px bg-chrome/40" /> [04] — Licensing & Implementation
+            </div>
+            <h2 className="font-display text-5xl md:text-8xl uppercase italic leading-[0.9] mb-8 max-w-5xl">
+              Construa com um sistema.<br />
+              <span className="text-chrome/50">Seu centro de treinamento híbrido.</span>
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl border-l border-chrome/30 pl-5">
+              Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
+              O G-FORCE System entrega a metodologia, o projeto de implantação, a formação da equipe,
+              o suporte e a licença oficial para operar no padrão G-FORCE.
+            </p>
           </div>
-          <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-            Construa com um sistema.<br />
-            <span className="text-chrome/50">Seu centro de treinamento híbrido.</span>
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-16 max-w-3xl">
-            Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
-            O G-FORCE System entrega a metodologia, o projeto de implantação, a formação da equipe,
-            o suporte e a licença oficial para operar no padrão G-FORCE.
-          </p>
+        </div>
 
+        <div className="max-w-7xl mx-auto px-6 md:px-10 pb-32">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-white/10 mb-16">
             {["Metodologia", "Implantação", "Formação", "Operação", "Suporte", "Licenciamento"].map((c, i) => (
-              <div key={c} className="bg-background p-6">
-                <div className="font-mono text-[10px] text-chrome/60 mb-3">[0{i + 1}]</div>
-                <div className="font-display text-lg uppercase">{c}</div>
+              <div key={c} className="group bg-background p-6 hover:bg-white/[0.04] transition-colors">
+                <div className="font-mono text-[10px] text-chrome/60 group-hover:text-[#25D366] mb-3 transition-colors">[0{i + 1}]</div>
+                <div className="font-display text-lg md:text-xl uppercase">{c}</div>
               </div>
             ))}
           </div>
@@ -647,7 +660,7 @@ function Home() {
             ].map((plan) => (
               <div
                 key={plan.name}
-                className={`bg-background p-8 md:p-10 flex flex-col border ${plan.pro ? "border-[#25D366]" : "border-white/10"}`}
+                className={`bg-background p-8 md:p-10 flex flex-col border hover:-translate-y-1 transition-all duration-500 ${plan.pro ? "border-[#25D366] shadow-[0_20px_60px_-20px_rgba(37,211,102,0.35)]" : "border-white/10 hover:border-white/30"}`}
               >
                 <h3 className="font-display text-3xl md:text-4xl uppercase italic leading-none mb-3">{plan.name}</h3>
                 <p className="text-muted-foreground mb-8">{plan.tag}</p>
