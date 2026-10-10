@@ -214,13 +214,6 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex flex-col justify-end px-6 md:px-10 pt-28 pb-10 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src={heroSled}
-            alt="Gilles na largada da Extreme Race"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover brightness-[0.45]"
-          />
           <Smoke className="opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-background/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-background/40" />
