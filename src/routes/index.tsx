@@ -772,7 +772,7 @@ function Home() {
                 [06] — Live Events
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
-                Hybrid Trails.
+                Hybrid Trials.
               </h2>
             </div>
           </div>
