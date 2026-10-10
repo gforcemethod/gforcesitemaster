@@ -986,8 +986,10 @@ function Home() {
           <p className="font-mono text-chrome/60 mb-8 tracking-[0.3em] uppercase text-xs">
             Elite training movement
           </p>
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl uppercase italic mb-12 tracking-tighter leading-[0.9]">
-            CONSTRUA SEU PRÓPRIO<br /><span className="text-[#25D366]">CENTRO DE TREINAMENTO HÍBRIDO.</span>
+          <h2 className="font-display text-[clamp(2.5rem,7vw,7rem)] uppercase italic mb-12 tracking-tighter leading-[0.92] md:-mx-24">
+            <span className="block sm:whitespace-nowrap">Construa seu próprio</span>
+            <span className="block sm:whitespace-nowrap">centro de treinamento</span>
+            <span className="block">híbrido.</span>
           </h2>
           <blockquote className="text-chrome text-lg md:text-xl font-display uppercase italic mb-6 max-w-2xl mx-auto">
             "Treinar não é escolher uma capacidade. É desenvolver todas."
