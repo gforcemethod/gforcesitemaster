@@ -262,7 +262,7 @@ function Home() {
           </h1>
 
           <p className="max-w-md text-sm md:text-base text-muted-foreground mb-10 animate-reveal [animation-delay:350ms] border-l border-chrome/30 pl-4">
-            Treinamento híbrido, consultoria online, programas de treino e formação de treinadores em um único ecossistema.
+            Treinamento híbrido, consultoria online, programas de treino, formação de treinadores e implantação de studio em um único ecossistema.
           </p>
           <div className="flex flex-wrap gap-4 animate-reveal [animation-delay:500ms]">
             <a
