@@ -14,6 +14,10 @@ const items = [
     q: "Qual a diferença entre GF Trainer e G-Force System?",
     a: "GF Trainer é a certificação técnica na metodologia. O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.",
   },
+  {
+    q: "Para quem é o G-Force System?",
+    a: "Para profissionais de Educação Física, personal trainers, proprietários de Studios, empreendedores do fitness, gestores de Centros de Treinamento, profissionais que desejam abrir seu primeiro Centro e profissionais que desejam transformar sua estrutura atual em um Centro de Treinamento Híbrido.",
+  },
 ];
 
 export function Faq() {
