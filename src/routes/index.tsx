@@ -11,10 +11,10 @@ import { Faq } from "@/components/Faq";
 import heroSled from "@/assets/evento-gilles-largada.jpg";
 import heroPortrait from "@/assets/hero-portrait.png";
 import smokeImg from "@/assets/smoke.png";
-import sysEndurance from "@/assets/evento-trilha-corrida.jpg";
-import sysHybrid from "@/assets/evento-rastejo-lama.jpg";
-import sysStrength from "@/assets/evento-forca-pneu.jpg";
-import sysConditioning from "@/assets/evento-subida-rocha.jpg";
+import sysEndurance from "@/assets/sys-engine.jpg";
+import sysHybrid from "@/assets/sys-hybrid.jpg";
+import sysStrength from "@/assets/sys-strength.jpg";
+import sysConditioning from "@/assets/sys-power.jpg";
 import trainerBadge from "@/assets/trainer-badge.jpg";
 
 import extreme1 from "@/assets/extreme-1.png";
@@ -783,7 +783,7 @@ function Home() {
                 [06] — Live Events
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
-                A arena chama.
+                Hybrid Trails.
               </h2>
             </div>
           </div>
