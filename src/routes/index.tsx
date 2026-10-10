@@ -578,6 +578,39 @@ function Home() {
         </div>
       </section>
 
+      {/* G-FORCE SYSTEM — O QUE E */}
+      <section id="system" className="relative py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+              G-FORCE SYSTEM.
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.
+            </p>
+            <p className="font-display text-2xl md:text-3xl uppercase italic mb-4">Você não recebe apenas um curso.</p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8 border-l border-chrome/30 pl-5">
+              Você recebe metodologia, estrutura, treinamento, orientação para implantação, suporte e licença de uso da metodologia G-FORCE.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              O objetivo é transformar o conhecimento do profissional em uma operação de treinamento híbrido estruturada, padronizada e preparada para crescer.
+            </p>
+          </div>
+          <div className="relative aspect-square">
+            <div className="absolute -inset-4 border border-white/10" />
+            <img
+              src={programmingImg}
+              alt="Gilles em treino de corrida"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none"><Smoke className="opacity-45" /></div>
+          </div>
+        </div>
+      </section>
+
       {/* G-FORCE SYSTEM — LICENCIAMENTO */}
       <section id="licenca" className="relative bg-graphite border-y border-white/10 overflow-hidden">
         <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
@@ -696,65 +729,6 @@ function Home() {
             Licença renovável. Despesas de viagem do treinamento presencial por conta do contratante.
           </p>
         </div>
-      </section>
-
-      {/* GF PROGRAMMING */}
-      <section id="programming" className="relative py-32 px-6 md:px-10 bg-graphite border-b border-white/10">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-block px-3 py-1 bg-white/10 border border-white/20 font-mono text-[10px] mb-8 uppercase tracking-widest">
-              Online Coaching & Workout Programs
-            </div>
-            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-              GF Programming.
-            </h2>
-            <p className="text-muted-foreground max-w-md mb-12 text-lg leading-relaxed">
-              Acesse a metodologia oficial da G-Force de qualquer lugar. Consultoria online individualizada e programas de treino estruturados para construir o seu corpo híbrido de elite.
-            </p>
-            <ul className="space-y-4 mb-12">
-              {[
-                "Planilhas individuais via app dedicado",
-                "Métricas de performance e progressão de carga",
-                "Programas específicos (Endurance, Força e Híbrido)",
-                "Suporte técnico direto com nossos treinadores",
-                "Ajustes periódicos focados nos seus objetivos",
-              ].map((it, i) => (
-                <li key={it} className="flex items-center gap-4 border-b border-white/10 pb-4">
-                  <span className="text-chrome font-mono text-sm">[{String(i + 1).padStart(2, "0")}]</span>
-                  <span className="uppercase font-bold tracking-tight text-sm md:text-base">{it}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] transition-colors animate-pulse"
-            >
-              Acessar Programming <ArrowRight className="size-4" />
-            </a>
-          </div>
-          <div className="relative aspect-square">
-            <div className="absolute -inset-4 border border-white/10" />
-            <img
-              src={programmingImg}
-              alt="Gilles em treino de corrida"
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
-            <div className="absolute inset-0 overflow-hidden pointer-events-none"><Smoke className="opacity-45" /></div>
-            <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl p-5 border border-white/10">
-              <div className="font-mono text-[10px] uppercase text-chrome/60 mb-1">Vagas</div>
-              <div className="font-display text-2xl text-chrome">LIMITADAS</div>
-            </div>
-            <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-xl px-4 py-2 border border-white/10 font-mono text-[10px] uppercase tracking-widest text-chrome">
-              Consultoria & Planilhas
-            </div>
-          </div>
-        </div>
-
       </section>
 
       {/* SYSTEMS */}
@@ -1058,7 +1032,6 @@ function Home() {
                 <li><a href="#method" className="hover:text-chrome transition-colors">Metodologia</a></li>
                 <li><a href="#trainer" className="hover:text-chrome transition-colors">GF Trainer</a></li>
                 <li><a href="#mentor" className="hover:text-chrome transition-colors">GF Mentor</a></li>
-                <li><a href="#programming" className="hover:text-chrome transition-colors">GF Programming</a></li>
                 <li><a href="#systems" className="hover:text-chrome transition-colors">Sistemas</a></li>
               </ul>
             </div>
