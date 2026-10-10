@@ -898,7 +898,7 @@ function Home() {
 
       {/* STUDIO FIT */}
       <section id="studio" className="relative py-32 bg-graphite border-y border-white/10 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
               [07] — HQ
@@ -929,7 +929,12 @@ function Home() {
             >
               <MapPin className="size-4" /> Como Chegar
             </a>
-            <div className="mt-8 w-full aspect-[16/10] border border-white/10 overflow-hidden">
+          </div>
+          <div className="lg:col-span-7 flex flex-col gap-6">
+            <div className="w-full aspect-[16/10] border border-white/10 overflow-hidden">
+              <img src={studioTeam} alt="Turma Studio Fit Academia" className="w-full h-full object-cover grayscale" />
+            </div>
+            <div className="w-full aspect-[21/9] border border-white/10 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
               <iframe
                 src="https://maps.google.com/maps?q=STUDIO+FIT+ACADEMIA,Piripiri,PI&hl=pt&z=17&output=embed"
                 title="Localização Studio Fit Academia"
@@ -939,11 +944,6 @@ function Home() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </div>
-          </div>
-          <div className="lg:col-span-7">
-            <div className="w-full aspect-[4/3] border border-white/10 overflow-hidden">
-              <img src={studioTeam} alt="Turma Studio Fit Academia" className="w-full h-full object-cover grayscale" />
             </div>
           </div>
         </div>
