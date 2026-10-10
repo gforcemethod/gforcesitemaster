@@ -992,7 +992,7 @@ function Home() {
             <span className="block">híbrido.</span>
           </h2>
           <blockquote className="text-chrome text-lg md:text-xl font-display uppercase italic mb-6 max-w-2xl mx-auto">
-            "Treinar não é escolher uma capacidade. É desenvolver todas."
+            De treinador a dono de Studio.
           </blockquote>
           <p className="text-muted-foreground text-base md:text-lg mb-12 max-w-xl mx-auto leading-relaxed">
             A G-FORCE Hybrid Training Method representa uma nova geração de treinamento físico. Um sistema que une ciência, prática e performance.
