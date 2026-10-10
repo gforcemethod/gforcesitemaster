@@ -246,7 +246,7 @@ function Home() {
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className="font-mono text-[10px] md:text-xs mb-6 text-chrome/70 tracking-[0.3em] uppercase animate-reveal flex items-center gap-3">
             <span className="inline-block h-px w-10 bg-chrome/50" />
-            High Performance Hybrid Ecosystem
+            Ecossistema de Treinamento Híbrido
           </div>
           <h1 className="font-display text-[clamp(3rem,8.5vw,8rem)] leading-[0.85] uppercase italic text-balance mb-6 max-w-5xl animate-reveal [animation-delay:200ms] text-foreground">
             Um Método,<br />
