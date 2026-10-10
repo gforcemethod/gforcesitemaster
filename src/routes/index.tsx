@@ -31,7 +31,7 @@ import studioExperience5 from "@/assets/studio-experience-5.jpg";
 
 import studioInterior from "@/assets/evento-turma-extreme.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
-import method1 from "@/assets/method-1.jpg";
+import method1 from "@/assets/aluna-ruth-dip.jpg";
 import mentorImg from "@/assets/podcast-gforce-system.jpg";
 import igFeed from "@/assets/ig-feed.jpg";
 import programmingImg from "@/assets/gilles-corrida.jpg";
@@ -355,7 +355,7 @@ function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-32">
             <img
               src={method1}
-              alt="Mãos de atleta firmando uma barra olímpica"
+              alt="Aluna Studio Fit em treino"
               loading="lazy"
               width={800}
               height={1024}
