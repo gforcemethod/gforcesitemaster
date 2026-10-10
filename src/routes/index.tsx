@@ -833,9 +833,6 @@ function Home() {
 
 
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-              <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-xl px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-chrome">
-                Imersão · Teresina, PI
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <h3 className="font-display text-3xl md:text-4xl uppercase italic mb-3">
                   Studio Fit Experience
