@@ -650,7 +650,7 @@ function Home() {
                 ],
                 price: "R$ 6.697",
                 cta: "G-FORCE SYSTEM",
-                msg: "Quero saber mais sobre o G-FORCE System",
+                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: false,
               },
               {
@@ -669,7 +669,7 @@ function Home() {
                 ],
                 price: "R$ 14.997",
                 cta: "G-FORCE SYSTEM PRO",
-                msg: "Quero saber mais sobre o G-FORCE System PRO",
+                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: true,
               },
             ].map((plan) => (
