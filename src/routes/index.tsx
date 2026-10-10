@@ -1029,6 +1029,7 @@ function Home() {
               </h5>
               <ul className="space-y-2 text-sm">
                 <li><a href="#events" className="hover:text-chrome transition-colors">Extreme Race</a></li>
+                <li><a href="#events" className="hover:text-chrome transition-colors">Hybrid Race</a></li>
                 <li><a href="#events" className="hover:text-chrome transition-colors">Studio Experience</a></li>
                 <li><a href="#studio" className="hover:text-chrome transition-colors">Studio Fit</a></li>
               </ul>
