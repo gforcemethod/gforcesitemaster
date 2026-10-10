@@ -1049,7 +1049,7 @@ function Home() {
                     <Instagram className="size-4" /> @studiofitpiripiri
                   </a>
                 </li>
-                <li><a href="mailto:contato@gforce.com" className="hover:text-chrome transition-colors">contato@gforce.com</a></li>
+                <li><a href="https://instagram.com/gillestreinador" target="_blank" rel="noopener" className="hover:text-chrome transition-colors">@gillestreinador</a></li>
                 <li className="text-muted-foreground">Piripiri, PI — Brasil</li>
               </ul>
             </div>
