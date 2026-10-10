@@ -31,6 +31,10 @@ import studioExperience5 from "@/assets/studio-experience-5.jpg";
 
 import studioInterior from "@/assets/evento-turma-extreme.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
+import studioPhoto1 from "@/assets/studio-1.jpg";
+import studioPhoto2 from "@/assets/studio-2.jpg";
+import studioPhoto3 from "@/assets/studio-3.jpg";
+import studioPhoto4 from "@/assets/studio-4.jpg";
 import method1 from "@/assets/aluna-ruth-dip.jpg";
 import mentorImg from "@/assets/podcast-gforce-system.jpg";
 import igPost1 from "@/assets/ig-1.jpg";
@@ -259,10 +263,10 @@ function Home() {
           </p>
           <div className="flex flex-wrap gap-4 animate-reveal [animation-delay:500ms]">
             <a
-              href="#trainer"
+              href="#system"
               className="px-8 md:px-10 py-4 bg-foreground text-background font-display uppercase tracking-widest hover:bg-chrome transition-colors flex items-center gap-3"
             >
-              Quero me Certificar <ArrowRight className="size-4" />
+              Quero implantar GF System <ArrowRight className="size-4" />
             </a>
             <a
               href="#method"
@@ -879,8 +883,24 @@ function Home() {
             </a>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="w-full aspect-[16/10] border border-white/10 overflow-hidden">
-              <img src={studioTeam} alt="Turma Studio Fit Academia" className="w-full h-full object-cover grayscale" />
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { img: studioPhoto1, alt: "Fachada do Studio Fit" },
+                { img: studioPhoto2, alt: "Preparatório Extreme Race no Studio Fit" },
+                { img: studioPhoto3, alt: "Turma do Studio Fit" },
+                { img: studioPhoto4, alt: "Área interna do Studio Fit" },
+              ].map((p) => (
+                <div key={p.alt} className="group aspect-square border border-white/10 overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.alt}
+                    loading="lazy"
+                    width={1000}
+                    height={1000}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]"
+                  />
+                </div>
+              ))}
             </div>
             <div className="w-full aspect-[21/9] border border-white/10 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
               <iframe
