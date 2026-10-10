@@ -13,7 +13,7 @@ export function Nav() {
       <div className="hidden md:flex items-center gap-8 text-[10px] font-mono tracking-[0.2em] uppercase text-foreground">
         <a href="#method" className="hover:text-chrome transition-colors">Method</a>
         <a href="#trainer" className="hover:text-chrome transition-colors">Trainer</a>
-        <a href="#mentor" className="hover:text-chrome transition-colors">Mentor</a>
+        <a href="#mentor" className="hover:text-chrome transition-colors">Implantação</a>
         <a href="#system" className="hover:text-chrome transition-colors">G-Force System</a>
         <a href="#systems" className="hover:text-chrome transition-colors">Systems</a>
         <a href="#events" className="hover:text-chrome transition-colors">Events</a>

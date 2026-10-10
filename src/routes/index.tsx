@@ -48,7 +48,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Metodologia oficial de treinamento híbrido de alta performance. Certificação GF Trainer, mentoria GF Mentor, eventos Extreme Race e Studio Fit Experience.",
+          "Metodologia oficial de treinamento híbrido de alta performance. Certificação GF Trainer, implantação G-FORCE System, eventos Extreme Race e Studio Fit Experience.",
       },
       { property: "og:title", content: "G-Force Hybrid Training Method" },
       {
@@ -527,7 +527,7 @@ function Home() {
         </div>
       </section>
 
-      {/* GF MENTOR */}
+      {/* IMPLANTACAO */}
       <section id="mentor" className="py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
@@ -542,23 +542,21 @@ function Home() {
           </div>
           <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-              [03] — GF Mentor
+              [03] — Implantação
             </div>
             <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-              Mentoria executiva<br />
-              <span className="text-chrome/50">para treinadores de elite.</span>
+              Implantação.<br />
+              <span className="text-chrome/50">Começa com planejamento.</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl">
-              GF Mentor é o nível superior. Posicionamento de marca, autoridade técnica, estratégia
-              comercial e escala de operação para treinadores que já operam no alto padrão e querem
-              dominar o próprio mercado.
+              A estruturação de um Centro de Treinamento não começa com a compra de equipamentos.
             </p>
             <div className="grid sm:grid-cols-2 gap-px bg-white/10 max-w-2xl mb-10">
               {[
-                { t: "Posicionamento", d: "Construção de marca pessoal e autoridade digital." },
-                { t: "Acompanhamento", d: "Calls 1:1, plano de execução e revisão mensal." },
-                { t: "Estratégia", d: "Modelo de negócio, ticket alto, retenção." },
-                { t: "Networking", d: "Acesso à mesa dos top performers do G-Force." },
+                { t: "Espaço", d: "Estrutura do espaço e organização das áreas." },
+                { t: "Equipamentos", d: "Equipamentos necessários, prioritários e secundários." },
+                { t: "Estações", d: "Organização das estações e fluxo de alunos." },
+                { t: "Operação", d: "Capacidade por turma e estrutura inicial de operação." },
               ].map((b) => (
                 <div key={b.t} className="bg-background p-6">
                   <h4 className="font-display text-xl uppercase mb-2">{b.t}</h4>
@@ -567,12 +565,10 @@ function Home() {
               ))}
             </div>
             <a
-              href="https://payfast.greenn.com.br/gtq47gc"
-              target="_blank"
-              rel="noopener"
+              href="#licenca"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
             >
-              Quero a Mentoria <ArrowRight className="size-4" />
+              G-FORCE SYSTEM <ArrowRight className="size-4" />
             </a>
           </div>
         </div>
@@ -990,8 +986,8 @@ function Home() {
           <p className="font-mono text-chrome/60 mb-8 tracking-[0.3em] uppercase text-xs">
             Elite training movement
           </p>
-          <h2 className="font-display text-6xl md:text-8xl lg:text-9xl uppercase italic mb-12 tracking-tighter leading-[0.85]">
-            Comece a evoluir.<br />Build the Machine.
+          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl uppercase italic mb-12 tracking-tighter leading-[0.9]">
+            CONSTRUA SEU PRÓPRIO<br /><span className="text-[#25D366]">CENTRO DE TREINAMENTO HÍBRIDO.</span>
           </h2>
           <blockquote className="text-chrome text-lg md:text-xl font-display uppercase italic mb-6 max-w-2xl mx-auto">
             "Treinar não é escolher uma capacidade. É desenvolver todas."
@@ -1028,7 +1024,7 @@ function Home() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#method" className="hover:text-chrome transition-colors">Metodologia</a></li>
                 <li><a href="#trainer" className="hover:text-chrome transition-colors">GF Trainer</a></li>
-                <li><a href="#mentor" className="hover:text-chrome transition-colors">GF Mentor</a></li>
+                <li><a href="#mentor" className="hover:text-chrome transition-colors">Implantação</a></li>
                 <li><a href="#systems" className="hover:text-chrome transition-colors">Sistemas</a></li>
               </ul>
             </div>
