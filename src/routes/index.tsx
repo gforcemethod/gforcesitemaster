@@ -33,7 +33,12 @@ import studioInterior from "@/assets/evento-turma-extreme.jpg";
 import studioTeam from "@/assets/studio-team.jpg";
 import method1 from "@/assets/aluna-ruth-dip.jpg";
 import mentorImg from "@/assets/podcast-gforce-system.jpg";
-import igFeed from "@/assets/ig-feed.jpg";
+import igPost1 from "@/assets/ig-1.jpg";
+import igPost2 from "@/assets/ig-2.jpg";
+import igPost3 from "@/assets/ig-3.jpg";
+import igPost4 from "@/assets/ig-4.jpg";
+import igPost5 from "@/assets/ig-5.jpg";
+import igPost6 from "@/assets/ig-6.jpg";
 import programmingImg from "@/assets/gilles-corrida.jpg";
 
 export const Route = createFileRoute("/")({
@@ -968,22 +973,37 @@ function Home() {
               <Instagram className="size-4" /> Seguir
             </a>
           </div>
-          <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-2">
+            {[igPost1, igPost2, igPost3, igPost4, igPost5, igPost6].map((img, i) => (
+              <a
+                key={i}
+                href="https://instagram.com/studiofitpiripiri"
+                target="_blank"
+                rel="noopener"
+                className="group relative block aspect-square overflow-hidden bg-background"
+              >
+                <img
+                  src={img}
+                  alt="Post @studiofitpiripiri"
+                  loading="lazy"
+                  width={900}
+                  height={900}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]"
+                />
+                <div className="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <Instagram className="size-8 text-foreground" />
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
             <a
               href="https://instagram.com/studiofitpiripiri"
               target="_blank"
               rel="noopener"
-              className="block bg-background overflow-hidden relative group"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-white/20 font-display uppercase text-sm tracking-widest hover:bg-white/10 transition-colors"
             >
-              <img
-                src={igFeed}
-                alt="Feed do Instagram @studiofitpiripiri"
-                loading="lazy"
-                className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-              />
-              <div className="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <Instagram className="size-10 text-foreground" />
-              </div>
+              <Instagram className="size-4" /> Ver mais no Instagram
             </a>
           </div>
         </div>
