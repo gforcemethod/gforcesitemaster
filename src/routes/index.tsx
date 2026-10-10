@@ -1025,7 +1025,7 @@ function Home() {
             </div>
             <div className="md:col-span-2">
               <h5 className="font-mono text-[10px] uppercase tracking-widest text-chrome/60 mb-4">
-                Arena
+                Eventos Híbridos
               </h5>
               <ul className="space-y-2 text-sm">
                 <li><a href="#events" className="hover:text-chrome transition-colors">Extreme Race</a></li>
