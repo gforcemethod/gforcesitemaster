@@ -37,12 +37,6 @@ import studioPhoto3 from "@/assets/studio-3.jpg";
 import studioPhoto4 from "@/assets/studio-4.jpg";
 import method1 from "@/assets/aluna-ruth-dip.jpg";
 import mentorImg from "@/assets/podcast-gforce-system.jpg";
-import igPost1 from "@/assets/ig-1.jpg";
-import igPost2 from "@/assets/ig-2.jpg";
-import igPost3 from "@/assets/ig-3.jpg";
-import igPost4 from "@/assets/ig-4.jpg";
-import igPost5 from "@/assets/ig-5.jpg";
-import igPost6 from "@/assets/ig-6.jpg";
 import programmingImg from "@/assets/gilles-corrida.jpg";
 
 export const Route = createFileRoute("/")({
@@ -881,6 +875,14 @@ function Home() {
             >
               <MapPin className="size-4" /> Como Chegar
             </a>
+            <a
+              href="https://instagram.com/studiofitpiripiri"
+              target="_blank"
+              rel="noopener"
+              className="ml-3 inline-flex items-center gap-3 px-6 py-3 border border-white/20 font-display uppercase text-sm tracking-widest hover:bg-white/10 transition-colors"
+            >
+              <Instagram className="size-4" /> @studiofitpiripiri
+            </a>
           </div>
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div className="grid grid-cols-2 gap-3">
@@ -917,66 +919,11 @@ function Home() {
         </div>
       </section>
 
-      {/* INSTAGRAM */}
-      <section className="py-32 px-6 md:px-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-end mb-12 flex-wrap gap-4">
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [08] — Social
-              </div>
-              <h2 className="font-display text-4xl md:text-6xl uppercase italic">@studiofitpiripiri</h2>
-            </div>
-            <a
-              href="https://instagram.com/studiofitpiripiri"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-chrome hover:text-foreground transition-colors"
-            >
-              <Instagram className="size-4" /> Seguir
-            </a>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-2">
-            {[igPost1, igPost2, igPost3, igPost4, igPost5, igPost6].map((img, i) => (
-              <a
-                key={i}
-                href="https://instagram.com/studiofitpiripiri"
-                target="_blank"
-                rel="noopener"
-                className="group relative block aspect-square overflow-hidden bg-background"
-              >
-                <img
-                  src={img}
-                  alt="Studio Fit Piripiri"
-                  loading="lazy"
-                  width={900}
-                  height={900}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]"
-                />
-                <div className="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <Instagram className="size-8 text-foreground" />
-                </div>
-              </a>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <a
-              href="https://instagram.com/studiofitpiripiri"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-3 px-8 py-4 border border-white/20 font-display uppercase text-sm tracking-widest hover:bg-white/10 transition-colors"
-            >
-              <Instagram className="size-4" /> Ver mais no Instagram
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section id="faq" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
         <div className="max-w-5xl mx-auto">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-            [09] — FAQ
+            [08] — FAQ
           </div>
           <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-16">
             Perguntas<br />frequentes.
