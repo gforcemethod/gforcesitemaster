@@ -638,6 +638,15 @@ function Home() {
             ))}
           </div>
 
+          <div className="relative mb-10 border border-[#25D366]/60 bg-[#25D366]/[0.06] p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+            <div className="shrink-0 inline-flex items-center gap-3 self-start bg-[#25D366] text-background px-4 py-2 font-display uppercase tracking-widest text-sm">
+              Turma Fundadora · 5 vagas
+            </div>
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              Uma turma fundadora que vai usar o que já fizemos, validamos e deu certo por quase uma década.
+              <span className="block mt-1 text-foreground font-bold uppercase tracking-tight text-xs md:text-sm">Valores de fundador. Depois, os valores serão maiores.</span>
+            </p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {[
               {
@@ -690,7 +699,7 @@ function Home() {
                     </li>
                   ))}
                 </ul>
-                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-2">Investimento</div>
+                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#25D366] mb-2">Investimento · valor de fundador</div>
                 <div className="font-display text-4xl md:text-5xl mb-8">{plan.price}</div>
                 <a
                   href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
