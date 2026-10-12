@@ -906,7 +906,7 @@ function Home() {
                 { img: studioPhoto3, alt: "Turma do Studio Fit" },
                 { img: studioPhoto4, alt: "Área interna do Studio Fit" },
               ].map((p) => (
-                <div key={p.alt} className="group aspect-square border border-white/10 overflow-hidden">
+                <div key={p.alt} className="group aspect-[4/3] border border-white/10 overflow-hidden">
                   <img
                     src={p.img}
                     alt={p.alt}
@@ -918,7 +918,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="w-full aspect-[21/9] border border-white/10 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+            <div className="w-full aspect-[3/1] border border-white/10 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
               <iframe
                 src="https://maps.google.com/maps?q=STUDIO+FIT+ACADEMIA,Piripiri,PI&hl=pt&z=17&output=embed"
                 title="Localização Studio Fit Academia"
