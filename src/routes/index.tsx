@@ -439,6 +439,7 @@ function Home() {
             </div>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
               Uma turma fundadora que vai usar o que já fizemos, validamos e deu certo por quase uma década.
+              <span className="block mt-1">Validado no nosso centro: Studio Fit, em Piripiri-PI.</span>
               <span className="block mt-1 text-foreground font-bold uppercase tracking-tight text-xs md:text-sm">Valores de fundador. Depois, os valores serão maiores.</span>
             </p>
           </div>
@@ -495,7 +496,8 @@ function Home() {
                   ))}
                 </ul>
                 <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#25D366] mb-2">Investimento · valor de fundador</div>
-                <div className="font-display text-4xl md:text-5xl mb-8">{plan.price}</div>
+                <div className="font-display text-4xl md:text-5xl mb-2">{plan.price}</div>
+                <div className="text-sm text-muted-foreground mb-8">Pix ou cartão em 10x · Sem royalties</div>
                 <a
                   href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
                   target="_blank"
@@ -517,7 +519,7 @@ function Home() {
             ))}
           </div>
           <p className="text-xs text-muted-foreground">
-            Licença renovável. Despesas de viagem do treinamento presencial por conta do contratante.
+            Sem royalties. Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos. Pagamento via Pix ou cartão em 10x. Despesas de viagem do treinamento presencial por conta do contratante.
           </p>
         </div>
       </section>
