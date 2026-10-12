@@ -15,7 +15,6 @@ import sysEndurance from "@/assets/sys-engine.jpg";
 import sysHybrid from "@/assets/sys-hybrid.jpg";
 import sysStrength from "@/assets/sys-strength.jpg";
 import sysConditioning from "@/assets/sys-power.jpg";
-import trainerBadge from "@/assets/trainer-badge.jpg";
 
 import extreme1 from "@/assets/extreme-1.png";
 import extreme2 from "@/assets/extreme-2.png";
@@ -46,7 +45,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Metodologia oficial de treinamento híbrido de alta performance. Certificação GF Trainer, implantação G-FORCE System, eventos Extreme Race e Studio Fit Experience.",
+          "Metodologia oficial de treinamento híbrido de alta performance. Implantação G-FORCE System, eventos Extreme Race e Studio Fit Experience.",
       },
       { property: "og:title", content: "G-Force Hybrid Training Method" },
       {
@@ -299,7 +298,7 @@ function Home() {
 
 
       {/* MARQUEE */}
-      <div className="border-y border-white/10 py-6 overflow-hidden">
+      <div className="py-6 overflow-hidden">
         <div className="flex whitespace-nowrap animate-[marquee_40s_linear_infinite]">
           {[...Array(2)].map((_, k) => (
             <div key={k} className="flex items-center gap-12 px-6 shrink-0">
@@ -314,7 +313,7 @@ function Home() {
       </div>
 
       {/* G-FORCE SYSTEM — O QUE E */}
-      <section id="system" className="relative py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
+      <section id="system" className="relative py-32 px-6 md:px-10 sec-down">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
@@ -347,7 +346,7 @@ function Home() {
       </section>
 
       {/* IMPLANTACAO */}
-      <section id="mentor" className="py-32 px-6 md:px-10">
+      <section id="mentor" className="py-32 px-6 md:px-10 sec-up">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
             <img
@@ -394,7 +393,7 @@ function Home() {
       </section>
 
       {/* G-FORCE SYSTEM — LICENCIAMENTO */}
-      <section id="licenca" className="relative bg-graphite border-y border-white/10 overflow-hidden">
+      <section id="licenca" className="relative overflow-hidden sec-down">
         <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
           <img
             src={studioInterior}
@@ -477,7 +476,7 @@ function Home() {
                   "Licença — 2 anos de utilização da metodologia, identidade e materiais autorizados.",
                 ],
                 price: "R$ 14.997",
-                renew: "Renovação da licença: R$ 5.997,90 por 1 ano ou R$ 7.997,90 por 2 anos.",
+                renew: "Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos.",
                 cta: "G-FORCE SYSTEM PRO",
                 msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: true,
@@ -528,7 +527,7 @@ function Home() {
       </section>
 
       {/* METHOD */}
-      <section id="method" className="py-32 px-6 md:px-10">
+      <section id="method" className="py-32 px-6 md:px-10 sec-up">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12 mb-20">
             <div className="lg:col-span-5">
@@ -675,65 +674,8 @@ function Home() {
         </div>
       </section>
 
-      {/* GF TRAINER */}
-      <section id="trainer" className="relative py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-block px-3 py-1 bg-white/10 border border-white/20 font-mono text-[10px] mb-8 uppercase tracking-widest">
-              Official Certification — Level 1 to 3
-            </div>
-            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-              Torne-se um<br />GF Trainer.
-            </h2>
-            <p className="text-muted-foreground max-w-md mb-12 text-lg leading-relaxed">
-              Domine a metodologia híbrida que está redefinindo o fitness de elite. Formação técnica,
-              prática e estratégica para treinadores que buscam o topo do mercado.
-            </p>
-            <ul className="space-y-4 mb-12">
-              {[
-                "08 Módulos de especialização técnica",
-                "Selo oficial G-Force Trainer",
-                "Workshops práticos no Studio Fit",
-                "Comunidade fechada de treinadores certificados",
-              ].map((it, i) => (
-                <li key={it} className="flex items-center gap-4 border-b border-white/10 pb-4">
-                  <span className="text-chrome font-mono text-sm">[{String(i + 1).padStart(2, "0")}]</span>
-                  <span className="uppercase font-bold tracking-tight text-sm md:text-base">{it}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="https://payfast.greenn.com.br/nnvpxb3"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
-            >
-              CONHECER O CURSO <ArrowRight className="size-4" />
-            </a>
-          </div>
-          <div className="relative aspect-square">
-            <div className="absolute -inset-4 border border-white/10" />
-            <img
-              src={trainerBadge}
-              alt="Selo oficial de certificação G-Force Trainer"
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="w-full h-full object-cover grayscale"
-            />
-            <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl p-5 border border-white/10">
-              <div className="font-mono text-[10px] uppercase text-chrome/60 mb-1">Current Cohort</div>
-              <div className="font-display text-2xl">LANÇAMENTO EM BREVE</div>
-            </div>
-            <div className="absolute top-6 left-6 bg-background/90 backdrop-blur-xl px-4 py-2 border border-white/10 font-mono text-[10px] uppercase tracking-widest text-chrome">
-              Cohort 2026 · Q1
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SYSTEMS */}
-      <section id="systems" className="py-32 border-y border-white/10">
+      <section id="systems" className="py-32 sec-down">
         <div className="max-w-7xl mx-auto px-6 md:px-10 mb-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
@@ -776,7 +718,7 @@ function Home() {
       </section>
 
       {/* EVENTS */}
-      <section id="events" className="py-32 px-6 md:px-10">
+      <section id="events" className="py-32 px-6 md:px-10 sec-up">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 flex-wrap gap-6">
             <div>
@@ -857,7 +799,7 @@ function Home() {
       </section>
 
       {/* STUDIO FIT */}
-      <section id="studio" className="relative py-32 bg-graphite border-y border-white/10 overflow-hidden">
+      <section id="studio" className="relative py-32 overflow-hidden sec-down">
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
@@ -934,7 +876,7 @@ function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
+      <section id="faq" className="py-32 px-6 md:px-10 sec-up">
         <div className="max-w-5xl mx-auto">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
             [08] — FAQ
@@ -947,7 +889,7 @@ function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section id="cta" className="py-40 px-6 md:px-10 relative overflow-hidden">
+      <section id="cta" className="py-40 px-6 md:px-10 relative overflow-hidden sec-down">
         <div
           aria-hidden
           className="absolute inset-0 flex items-center justify-center select-none pointer-events-none"
@@ -983,7 +925,7 @@ function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 px-6 md:px-10 py-16">
+      <footer className="sec-up px-6 md:px-10 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-12 gap-12 mb-16">
             <div className="md:col-span-5">
@@ -999,7 +941,6 @@ function Home() {
               </h5>
               <ul className="space-y-2 text-sm">
                 <li><a href="#method" className="hover:text-chrome transition-colors">Metodologia</a></li>
-                <li><a href="#trainer" className="hover:text-chrome transition-colors">GF Trainer</a></li>
                 <li><a href="#mentor" className="hover:text-chrome transition-colors">Implantação</a></li>
                 <li><a href="#systems" className="hover:text-chrome transition-colors">Sistemas</a></li>
               </ul>

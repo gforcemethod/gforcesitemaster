@@ -113,3 +113,7 @@
     color: var(--color-background);
   }
 }
+
+/* Degrade alternado entre secoes: preto -> grafite -> preto, sem emenda visivel */
+.sec-down { background: linear-gradient(to bottom, var(--background), oklch(0.21 0 0)); }
+.sec-up { background: linear-gradient(to bottom, oklch(0.21 0 0), var(--background)); }

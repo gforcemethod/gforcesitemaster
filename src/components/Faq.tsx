@@ -7,10 +7,6 @@ const items = [
     a: "Uma metodologia oficial de treinamento híbrido que integra endurance, força, condicionamento e resistência em um único sistema de alta performance, formando atletas e treinadores de elite.",
   },
   {
-    q: "Para quem é a certificação GF Trainer?",
-    a: "Para personal trainers, preparadores físicos e profissionais de educação física que buscam dominar a metodologia híbrida e elevar o nível técnico, comercial e de autoridade no mercado.",
-  },
-  {
     q: "Qual a diferença entre GF Trainer e G-Force System?",
     a: "GF Trainer é a certificação técnica na metodologia. O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.",
   },
