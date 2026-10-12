@@ -457,6 +457,7 @@ function Home() {
                   "Licença — 1 ano de utilização da metodologia, identidade e materiais autorizados.",
                 ],
                 price: "R$ 6.697",
+                renew: "Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos.",
                 cta: "G-FORCE SYSTEM",
                 msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: false,
@@ -476,6 +477,7 @@ function Home() {
                   "Licença — 2 anos de utilização da metodologia, identidade e materiais autorizados.",
                 ],
                 price: "R$ 14.997",
+                renew: "Renovação da licença: R$ 5.997,90 por 1 ano ou R$ 7.997,90 por 2 anos.",
                 cta: "G-FORCE SYSTEM PRO",
                 msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: true,
@@ -497,7 +499,8 @@ function Home() {
                 </ul>
                 <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#25D366] mb-2">Investimento · valor de fundador</div>
                 <div className="font-display text-4xl md:text-5xl mb-2">{plan.price}</div>
-                <div className="text-sm text-muted-foreground mb-8">Pix ou cartão em 10x · Sem royalties</div>
+                <div className="text-sm text-muted-foreground mb-1">Pix ou cartão em 10x · Sem royalties</div>
+                <div className="text-xs text-muted-foreground mb-8">{plan.renew}</div>
                 <a
                   href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
                   target="_blank"
@@ -519,7 +522,7 @@ function Home() {
             ))}
           </div>
           <p className="text-xs text-muted-foreground">
-            Sem royalties. Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos. Pagamento via Pix ou cartão em 10x. Despesas de viagem do treinamento presencial por conta do contratante.
+            Sem royalties. Pagamento via Pix ou cartão em 10x. Despesas de viagem do treinamento presencial por conta do contratante.
           </p>
         </div>
       </section>
