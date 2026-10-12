@@ -11,16 +11,12 @@ const items = [
     a: "Para personal trainers, preparadores físicos e profissionais de educação física que buscam dominar a metodologia híbrida e elevar o nível técnico, comercial e de autoridade no mercado.",
   },
   {
-    q: "Qual a diferença entre GF Trainer e GF Mentor?",
-    a: "GF Trainer é a certificação técnica na metodologia. GF Mentor é a mentoria premium focada em posicionamento, marca pessoal e escala do negócio para treinadores que já operam no alto padrão.",
+    q: "Qual a diferença entre GF Trainer e G-Force System?",
+    a: "GF Trainer é a certificação técnica na metodologia. O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.",
   },
   {
-    q: "Preciso ser atleta para treinar no Studio Fit?",
-    a: "Não. Os sistemas são escaláveis para todos os níveis, do iniciante motivado ao competidor experiente. O método é progressivo e individualizado.",
-  },
-  {
-    q: "Como participo da Extreme Race?",
-    a: "As inscrições abrem em janelas oficiais e são limitadas. Cadastre-se na lista de prioridade através do CTA da seção de eventos para receber o aviso na primeira janela.",
+    q: "Para quem é o G-Force System?",
+    a: "Para profissionais de Educação Física, personal trainers, proprietários de Studios, empreendedores do fitness, gestores de Centros de Treinamento, profissionais que desejam abrir seu primeiro Centro e profissionais que desejam transformar sua estrutura atual em um Centro de Treinamento Híbrido.",
   },
 ];
 
