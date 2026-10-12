@@ -313,13 +313,222 @@ function Home() {
         </div>
       </div>
 
+      {/* G-FORCE SYSTEM — O QUE E */}
+      <section id="system" className="relative py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+              G-FORCE SYSTEM.
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.
+            </p>
+            <p className="font-display text-2xl md:text-3xl uppercase italic mb-4">Você não recebe apenas um curso.</p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8 border-l border-chrome/30 pl-5">
+              Você recebe metodologia, estrutura, treinamento, orientação para implantação, suporte e licença de uso da metodologia G-FORCE.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              O objetivo é transformar o conhecimento do profissional em uma operação de treinamento híbrido estruturada, padronizada e preparada para crescer.
+            </p>
+          </div>
+          <div className="relative aspect-square">
+            <div className="absolute -inset-4 border border-white/10" />
+            <img
+              src={programmingImg}
+              alt="Gilles em treino de corrida"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none"><Smoke className="opacity-45" /></div>
+          </div>
+        </div>
+      </section>
+
+      {/* IMPLANTACAO */}
+      <section id="mentor" className="py-32 px-6 md:px-10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <img
+              src={mentorImg}
+              alt="Podcast G-FORCE System"
+              loading="lazy"
+              width={1672}
+              height={941}
+              className="w-full aspect-[16/10] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+            />
+          </div>
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
+              [01] — Implantação
+            </div>
+            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
+              Implantação.<br />
+              <span className="text-chrome/50">Começa com planejamento.</span>
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl">
+              A estruturação de um Centro de Treinamento não começa com a compra de equipamentos.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-px bg-white/10 max-w-2xl mb-10">
+              {[
+                { t: "Espaço", d: "Estrutura do espaço e organização das áreas." },
+                { t: "Equipamentos", d: "Equipamentos necessários, prioritários e secundários." },
+                { t: "Estações", d: "Organização das estações e fluxo de alunos." },
+                { t: "Operação", d: "Capacidade por turma e estrutura inicial de operação." },
+              ].map((b) => (
+                <div key={b.t} className="bg-background p-6">
+                  <h4 className="font-display text-xl uppercase mb-2">{b.t}</h4>
+                  <p className="text-sm text-muted-foreground">{b.d}</p>
+                </div>
+              ))}
+            </div>
+            <a
+              href="#licenca"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
+            >
+              G-FORCE SYSTEM <ArrowRight className="size-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* G-FORCE SYSTEM — LICENCIAMENTO */}
+      <section id="licenca" className="relative bg-graphite border-y border-white/10 overflow-hidden">
+        <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
+          <img
+            src={studioInterior}
+            alt="Equipe G-FORCE na Extreme Race 2026"
+            loading="lazy"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-40 grayscale group-hover:opacity-55 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
+          />
+          <Smoke className="opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/70 to-graphite/30" />
+          <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6 flex items-center gap-3">
+              <span className="w-12 h-px bg-chrome/40" /> [02] — G-FORCE System
+            </div>
+            <h2 className="font-display text-5xl md:text-8xl uppercase italic leading-[0.9] mb-6 max-w-5xl">
+              Construa com um sistema.
+            </h2>
+            <p className="font-display text-2xl md:text-4xl uppercase italic leading-[1] text-chrome/50 mb-8 max-w-4xl">
+              O sistema para implantação e operação de um Centro de Treinamento Híbrido.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl border-l border-chrome/30 pl-5">
+              Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
+              Você não recebe apenas uma metodologia. Você recebe um sistema para colocá-la em operação.
+            </p>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 md:px-10 pb-32">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-white/10 mb-16">
+            {["Metodologia", "Implantação", "Formação", "Operação", "Suporte", "Licenciamento"].map((c, i) => (
+              <div key={c} className="group bg-background p-6 hover:bg-white/[0.04] transition-colors">
+                <div className="font-mono text-[10px] text-chrome/60 group-hover:text-[#25D366] mb-3 transition-colors">[0{i + 1}]</div>
+                <div className="font-display text-lg md:text-xl uppercase">{c}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="relative mb-10 border border-[#25D366]/60 bg-[#25D366]/[0.06] p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+            <div className="shrink-0 inline-flex items-center gap-3 self-start bg-[#25D366] text-background px-4 py-2 font-display uppercase tracking-widest text-sm">
+              Turma Fundadora · 5 vagas
+            </div>
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              Uma turma fundadora que vai usar o que já fizemos, validamos e deu certo por quase uma década.
+              <span className="block mt-1 text-foreground font-bold uppercase tracking-tight text-xs md:text-sm">Valores de fundador. Depois, os valores serão maiores.</span>
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            {[
+              {
+                name: "G-FORCE System",
+                tag: "Para quem quer receber o sistema e implementar com maior autonomia.",
+                items: [
+                  "Metodologia G-FORCE — Manual, sistemas, aulas, progressões, adaptações e testes.",
+                  "Projeto de implantação — Estrutura, organização do espaço, equipamentos, estações, fluxo e capacidade.",
+                  "Treinamento presencial — 1 dia com a equipe. Até 5 treinadores.",
+                  "Material de apoio — Materiais oficiais para estudo, consulta e aplicação.",
+                  "Suporte — WhatsApp exclusivo + reuniões de acompanhamento. Até 3 meses.",
+                  "Licença — 1 ano de utilização da metodologia, identidade e materiais autorizados.",
+                ],
+                price: "R$ 6.697",
+                cta: "G-FORCE SYSTEM",
+                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
+                pro: false,
+              },
+              {
+                name: "G-FORCE System PRO",
+                tag: "Para quem quer receber o sistema e contar com acompanhamento próximo durante a implantação.",
+                items: [
+                  "Tudo do G-FORCE SYSTEM +",
+                  "Projeto completo do espaço — Análise, layout, áreas, fluxo e capacidade.",
+                  "Definição de equipamentos — Lista, prioridades, investimento e organização da compra.",
+                  "Análise financeira — Investimento inicial, custos, capacidade, precificação, ticket e cenários.",
+                  "Treinamento presencial — 2 dias com a equipe. Até 5 treinadores.",
+                  "Consultoria comercial — Planos, preços, horários, captação, retenção e campanhas.",
+                  "Acompanhamento da implantação — Orientação nas principais etapas de implementação.",
+                  "Suporte — WhatsApp + reuniões + acompanhamento estratégico. 6 meses.",
+                  "Licença — 2 anos de utilização da metodologia, identidade e materiais autorizados.",
+                ],
+                price: "R$ 14.997",
+                cta: "G-FORCE SYSTEM PRO",
+                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
+                pro: true,
+              },
+            ].map((plan) => (
+              <div
+                key={plan.name}
+                className={`bg-background p-8 md:p-10 flex flex-col border hover:-translate-y-1 transition-all duration-500 ${plan.pro ? "border-[#25D366] shadow-[0_20px_60px_-20px_rgba(37,211,102,0.35)]" : "border-white/10 hover:border-white/30"}`}
+              >
+                <h3 className="font-display text-3xl md:text-4xl uppercase italic leading-none mb-3">{plan.name}</h3>
+                <p className="text-muted-foreground mb-8">{plan.tag}</p>
+                <ul className="space-y-3 mb-10 flex-1">
+                  {plan.items.map((it) => (
+                    <li key={it} className="flex gap-3 text-sm">
+                      <span className="text-[#25D366]" aria-hidden>✓</span>
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#25D366] mb-2">Investimento · valor de fundador</div>
+                <div className="font-display text-4xl md:text-5xl mb-8">{plan.price}</div>
+                <a
+                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
+                >
+                  {plan.cta} <ArrowRight className="size-4" />
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground mb-8">
+            {["Diagnóstico", "Estruturação", "Formação", "Implantação", "Acompanhamento", "Operação"].map((step, i, arr) => (
+              <span key={step} className="flex items-center gap-4">
+                {step}
+                {i < arr.length - 1 && <span className="text-chrome/50" aria-hidden>→</span>}
+              </span>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Licença renovável. Despesas de viagem do treinamento presencial por conta do contratante.
+          </p>
+        </div>
+      </section>
+
       {/* METHOD */}
       <section id="method" className="py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12 mb-20">
             <div className="lg:col-span-5">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                [01] — The Method
+                [03] — The Method
               </div>
               <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9]">
                 A ciência por trás<br />
@@ -359,7 +568,7 @@ function Home() {
             />
             <div className="md:col-span-3">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-4">
-                [02] — Founding Principle
+                [04] — Founding Principle
               </div>
               <blockquote className="font-display text-3xl md:text-5xl uppercase italic leading-[1] mb-8">
                 "Desenvolvimento simultâneo de múltiplas capacidades físicas"
@@ -383,7 +592,7 @@ function Home() {
             <div className="grid lg:grid-cols-12 gap-12 mb-20">
               <div className="lg:col-span-6">
                 <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-                  [02.1] — A Metodologia
+                  [04.1] — A Metodologia
                 </div>
                 <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
                   G-FORCE Training Method
@@ -515,215 +724,6 @@ function Home() {
               Cohort 2026 · Q1
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* IMPLANTACAO */}
-      <section id="mentor" className="py-32 px-6 md:px-10">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <img
-              src={mentorImg}
-              alt="Podcast G-FORCE System"
-              loading="lazy"
-              width={1672}
-              height={941}
-              className="w-full aspect-[16/10] object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
-          </div>
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6">
-              [03] — Implantação
-            </div>
-            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-              Implantação.<br />
-              <span className="text-chrome/50">Começa com planejamento.</span>
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl">
-              A estruturação de um Centro de Treinamento não começa com a compra de equipamentos.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-px bg-white/10 max-w-2xl mb-10">
-              {[
-                { t: "Espaço", d: "Estrutura do espaço e organização das áreas." },
-                { t: "Equipamentos", d: "Equipamentos necessários, prioritários e secundários." },
-                { t: "Estações", d: "Organização das estações e fluxo de alunos." },
-                { t: "Operação", d: "Capacidade por turma e estrutura inicial de operação." },
-              ].map((b) => (
-                <div key={b.t} className="bg-background p-6">
-                  <h4 className="font-display text-xl uppercase mb-2">{b.t}</h4>
-                  <p className="text-sm text-muted-foreground">{b.d}</p>
-                </div>
-              ))}
-            </div>
-            <a
-              href="#licenca"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
-            >
-              G-FORCE SYSTEM <ArrowRight className="size-4" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* G-FORCE SYSTEM — O QUE E */}
-      <section id="system" className="relative py-32 px-6 md:px-10 bg-graphite border-y border-white/10">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="font-display text-5xl md:text-7xl uppercase italic leading-[0.9] mb-8">
-              G-FORCE SYSTEM.
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              O G-FORCE SYSTEM é um sistema de implantação, formação e suporte desenvolvido para profissionais de Educação Física e empreendedores que desejam criar, estruturar ou transformar um Studio, Box ou Centro de Treinamento em uma operação de Treinamento Híbrido, utilizando a metodologia G-FORCE.
-            </p>
-            <p className="font-display text-2xl md:text-3xl uppercase italic mb-4">Você não recebe apenas um curso.</p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8 border-l border-chrome/30 pl-5">
-              Você recebe metodologia, estrutura, treinamento, orientação para implantação, suporte e licença de uso da metodologia G-FORCE.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              O objetivo é transformar o conhecimento do profissional em uma operação de treinamento híbrido estruturada, padronizada e preparada para crescer.
-            </p>
-          </div>
-          <div className="relative aspect-square">
-            <div className="absolute -inset-4 border border-white/10" />
-            <img
-              src={programmingImg}
-              alt="Gilles em treino de corrida"
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
-            <div className="absolute inset-0 overflow-hidden pointer-events-none"><Smoke className="opacity-45" /></div>
-          </div>
-        </div>
-      </section>
-
-      {/* G-FORCE SYSTEM — LICENCIAMENTO */}
-      <section id="licenca" className="relative bg-graphite border-y border-white/10 overflow-hidden">
-        <div className="group relative px-6 md:px-10 pt-32 pb-20 overflow-hidden">
-          <img
-            src={studioInterior}
-            alt="Equipe G-FORCE na Extreme Race 2026"
-            loading="lazy"
-            width={1920}
-            height={1080}
-            className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-40 grayscale group-hover:opacity-55 group-hover:scale-105 transition-all duration-1000 ease-[cubic-bezier(0.32,0.72,0,1)]"
-          />
-          <Smoke className="opacity-60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/70 to-graphite/30" />
-          <div className="relative z-10 max-w-7xl mx-auto">
-            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-chrome/60 mb-6 flex items-center gap-3">
-              <span className="w-12 h-px bg-chrome/40" /> [04] — G-FORCE System
-            </div>
-            <h2 className="font-display text-5xl md:text-8xl uppercase italic leading-[0.9] mb-6 max-w-5xl">
-              Construa com um sistema.
-            </h2>
-            <p className="font-display text-2xl md:text-4xl uppercase italic leading-[1] text-chrome/50 mb-8 max-w-4xl">
-              O sistema para implantação e operação de um Centro de Treinamento Híbrido.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl border-l border-chrome/30 pl-5">
-              Muitos profissionais sabem treinar. Poucos sabem estruturar um Centro de Treinamento.
-              Você não recebe apenas uma metodologia. Você recebe um sistema para colocá-la em operação.
-            </p>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 md:px-10 pb-32">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-white/10 mb-16">
-            {["Metodologia", "Implantação", "Formação", "Operação", "Suporte", "Licenciamento"].map((c, i) => (
-              <div key={c} className="group bg-background p-6 hover:bg-white/[0.04] transition-colors">
-                <div className="font-mono text-[10px] text-chrome/60 group-hover:text-[#25D366] mb-3 transition-colors">[0{i + 1}]</div>
-                <div className="font-display text-lg md:text-xl uppercase">{c}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="relative mb-10 border border-[#25D366]/60 bg-[#25D366]/[0.06] p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-            <div className="shrink-0 inline-flex items-center gap-3 self-start bg-[#25D366] text-background px-4 py-2 font-display uppercase tracking-widest text-sm">
-              Turma Fundadora · 5 vagas
-            </div>
-            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Uma turma fundadora que vai usar o que já fizemos, validamos e deu certo por quase uma década.
-              <span className="block mt-1 text-foreground font-bold uppercase tracking-tight text-xs md:text-sm">Valores de fundador. Depois, os valores serão maiores.</span>
-            </p>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {[
-              {
-                name: "G-FORCE System",
-                tag: "Para quem quer receber o sistema e implementar com maior autonomia.",
-                items: [
-                  "Metodologia G-FORCE — Manual, sistemas, aulas, progressões, adaptações e testes.",
-                  "Projeto de implantação — Estrutura, organização do espaço, equipamentos, estações, fluxo e capacidade.",
-                  "Treinamento presencial — 1 dia com a equipe. Até 5 treinadores.",
-                  "Material de apoio — Materiais oficiais para estudo, consulta e aplicação.",
-                  "Suporte — WhatsApp exclusivo + reuniões de acompanhamento. Até 3 meses.",
-                  "Licença — 1 ano de utilização da metodologia, identidade e materiais autorizados.",
-                ],
-                price: "R$ 6.697",
-                cta: "G-FORCE SYSTEM",
-                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
-                pro: false,
-              },
-              {
-                name: "G-FORCE System PRO",
-                tag: "Para quem quer receber o sistema e contar com acompanhamento próximo durante a implantação.",
-                items: [
-                  "Tudo do G-FORCE SYSTEM +",
-                  "Projeto completo do espaço — Análise, layout, áreas, fluxo e capacidade.",
-                  "Definição de equipamentos — Lista, prioridades, investimento e organização da compra.",
-                  "Análise financeira — Investimento inicial, custos, capacidade, precificação, ticket e cenários.",
-                  "Treinamento presencial — 2 dias com a equipe. Até 5 treinadores.",
-                  "Consultoria comercial — Planos, preços, horários, captação, retenção e campanhas.",
-                  "Acompanhamento da implantação — Orientação nas principais etapas de implementação.",
-                  "Suporte — WhatsApp + reuniões + acompanhamento estratégico. 6 meses.",
-                  "Licença — 2 anos de utilização da metodologia, identidade e materiais autorizados.",
-                ],
-                price: "R$ 14.997",
-                cta: "G-FORCE SYSTEM PRO",
-                msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
-                pro: true,
-              },
-            ].map((plan) => (
-              <div
-                key={plan.name}
-                className={`bg-background p-8 md:p-10 flex flex-col border hover:-translate-y-1 transition-all duration-500 ${plan.pro ? "border-[#25D366] shadow-[0_20px_60px_-20px_rgba(37,211,102,0.35)]" : "border-white/10 hover:border-white/30"}`}
-              >
-                <h3 className="font-display text-3xl md:text-4xl uppercase italic leading-none mb-3">{plan.name}</h3>
-                <p className="text-muted-foreground mb-8">{plan.tag}</p>
-                <ul className="space-y-3 mb-10 flex-1">
-                  {plan.items.map((it) => (
-                    <li key={it} className="flex gap-3 text-sm">
-                      <span className="text-[#25D366]" aria-hidden>✓</span>
-                      <span>{it}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-[#25D366] mb-2">Investimento · valor de fundador</div>
-                <div className="font-display text-4xl md:text-5xl mb-8">{plan.price}</div>
-                <a
-                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
-                >
-                  {plan.cta} <ArrowRight className="size-4" />
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground mb-8">
-            {["Diagnóstico", "Estruturação", "Formação", "Implantação", "Acompanhamento", "Operação"].map((step, i, arr) => (
-              <span key={step} className="flex items-center gap-4">
-                {step}
-                {i < arr.length - 1 && <span className="text-chrome/50" aria-hidden>→</span>}
-              </span>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground">
-            Licença renovável. Despesas de viagem do treinamento presencial por conta do contratante.
-          </p>
         </div>
       </section>
 
