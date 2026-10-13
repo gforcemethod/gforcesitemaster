@@ -100,7 +100,7 @@ const pillars = [
   {
     icon: Zap,
     title: "Performance",
-    desc: "Sistemas energéticos integrados. Força, fôlego e potência treinados sem interferência mútua.",
+    desc: "Sistemas energéticos integrados. Força, fôlego e potência treinados juntos, com interferência controlada.",
   },
   {
     icon: Award,
@@ -141,7 +141,7 @@ const posts = [
   },
   {
     tag: "Performance",
-    title: "Periodização: como organizar força e endurance sem interferência",
+    title: "Periodização: como organizar força e endurance com interferência controlada",
     read: "9 min",
   },
   {
