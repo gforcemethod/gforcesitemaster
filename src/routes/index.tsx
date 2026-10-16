@@ -268,25 +268,6 @@ function Home() {
               Conhecer a Metodologia <ArrowRight className="size-4" />
             </a>
           </div>
-
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 animate-reveal [animation-delay:700ms]">
-            {[
-              { v: "2.000+", l: "Alunos" },
-              { v: "+50", l: "Treinadores Certificados" },
-              { v: "10+", l: "Eventos Realizados" },
-              { v: "1", l: "Método com 9 anos de desenvolvimento" },
-            ].map((s) => (
-              <div key={s.l} className="flex items-start gap-3">
-                <div className="h-8 w-px bg-chrome/40 mt-1" />
-                <div>
-                  <div className="font-display text-3xl md:text-4xl text-foreground leading-none">{s.v}</div>
-                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-chrome/60 mt-2">
-                    {s.l}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* SCROLL INDICATOR */}
