@@ -439,6 +439,7 @@ function Home() {
                 price: "R$ 6.697",
                 renew: "Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos.",
                 cta: "G-FORCE SYSTEM",
+                payUrl: "https://loja.infinitepay.io/wlribeiro/oha7471-g-force-system",
                 msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: false,
               },
@@ -459,6 +460,7 @@ function Home() {
                 price: "R$ 14.997",
                 renew: "Renovação da licença: R$ 499,90 por 1 ano ou R$ 899,90 por 2 anos.",
                 cta: "G-FORCE SYSTEM PRO",
+                payUrl: "https://loja.infinitepay.io/wlribeiro/wds3710-g-force-system-pro",
                 msg: "Olá, equipe G-FORCE! Quero contratar o G-FORCE SYSTEM PRO.\n\nNome:\nEmpresa:\nFale um pouco da sua necessidade atual:",
                 pro: true,
               },
@@ -482,12 +484,20 @@ function Home() {
                 <div className="text-sm text-muted-foreground mb-1">Pix ou cartão em 10x · Sem royalties</div>
                 <div className="text-xs text-muted-foreground mb-8">{plan.renew}</div>
                 <a
-                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
+                  href={plan.payUrl}
                   target="_blank"
                   rel="noopener"
                   className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-background font-display uppercase text-sm tracking-widest hover:bg-[#128C7E] hover:text-white transition-all"
                 >
-                  {plan.cta} <ArrowRight className="size-4" />
+                  Comprar {plan.cta} <ArrowRight className="size-4" />
+                </a>
+                <a
+                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(plan.msg)}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="mt-3 inline-flex items-center justify-center gap-3 px-8 py-3 border border-white/20 text-foreground font-mono uppercase text-[11px] tracking-[0.2em] hover:border-[#25D366] hover:text-[#25D366] transition-all"
+                >
+                  Tirar dúvidas no WhatsApp
                 </a>
               </div>
             ))}
